@@ -388,20 +388,21 @@ GROUP BY DATE(f.fecha_procesado)
 ORDER BY fecha;
 """
 
-#GENERAR DOCUMENTOS DE NEGOCIO
+#GENERAR DOCUMENTOS DE NEGOCIO --
+# ventas mensuales en  un periodo de un año
 SQL_ANALYTICS_SALES_BY_MONTH = """
 SELECT
-    DATE_FORMAT(f.fecha_procesado, '%Y-%m') AS periodo,
+    DATE_FORMAT(f.fecha_procesado, '%%Y-%%m') AS periodo,
     COUNT(DISTINCT TRIM(f.orden)) AS pedidos,
     SUM(f.total) AS ventas_totales
 FROM folios f
 WHERE f.fecha_procesado IS NOT NULL
   AND DATE(f.fecha_procesado) >= CURDATE() - INTERVAL 1 YEAR
-GROUP BY DATE_FORMAT(f.fecha_procesado, '%Y-%m')
+GROUP BY DATE_FORMAT(f.fecha_procesado, '%%Y-%%m')
 ORDER BY periodo;
 """
-
-#GENERAR DOCUMENTOS DE NEGOCIO
+# generar numeros al año por linea
+#GENERAR DOCUMENTOS DE NEGOCIO - listo
 SQL_ANALYTICS_SALES_BY_CHANNEL = """
 SELECT
     TRIM(UPPER(f.vendedora)) AS canal,
@@ -416,21 +417,35 @@ GROUP BY TRIM(UPPER(f.vendedora))
 ORDER BY ventas_totales DESC;
 """
 
+#productos que mas se venden en el año
 #GENERAR DOCUMENTOS SOLO SI SE LIMITA A TOP 20 O TOP 50
 SQL_ANALYTICS_TOP_PRODUCTS = """
 SELECT
     ru.id_producto AS product_id,
     TRIM(ru.codigo) AS codigo,
     TRIM(ru.nombre) AS nombre,
+    s.id_subcategoria AS subcategoria_id,
+    TRIM(s.nombre_subcategoria) AS categoria,
     SUM(ru.cantidad) AS unidades_vendidas,
     SUM(ru.precio * ru.cantidad) AS monto_vendido
 FROM registro_usuario ru
+INNER JOIN productos p
+    ON p.id = ru.id_producto
+LEFT JOIN admin_subcategorias s
+    ON s.id_subcategoria = p.sub_categoria
 WHERE ru.fecha_procesado IS NOT NULL
   AND DATE(ru.fecha_procesado) >= CURDATE() - INTERVAL 1 YEAR
-GROUP BY ru.id_producto, TRIM(ru.codigo), TRIM(ru.nombre)
-ORDER BY unidades_vendidas DESC;
+GROUP BY 
+    ru.id_producto,
+    TRIM(ru.codigo),
+    TRIM(ru.nombre),
+    s.id_subcategoria,
+    TRIM(s.nombre_subcategoria)
+ORDER BY unidades_vendidas DESC
+LIMIT 50;
 """
 
+#clientes que mas compran en el año
 #GENERAR DOCUMENTOS SOLO SI SE LIMITA A TOP 20 O TOP 50
 SQL_ANALYTICS_TOP_CLIENTS = """
 SELECT
@@ -447,6 +462,7 @@ GROUP BY u.id, TRIM(CONCAT(COALESCE(u.nombre, ''), ' ', COALESCE(u.apellido, '')
 ORDER BY total_comprado DESC LIMIT 50;
 """
 
+# inventario por almacen
 #GENERAR DOCUMENTOS DE NEGOCIO
 SQL_ANALYTICS_INVENTORY_BY_STOREHOUSE = """
 SELECT
@@ -461,18 +477,19 @@ GROUP BY a.id_almacen, TRIM(a.nombre_almacen)
 ORDER BY stock_total DESC;
 """
 
-
+# productos sin ventas en el año
 SQL_ANALYTICS_PRODUCTS_WITHOUT_SALES_LAST_YEAR = """
 SELECT
     p.id AS product_id,
     TRIM(p.codigo) AS codigo,
-    TRIM(p.nombre) AS nombre
+    TRIM(p.nombre) AS nombre,
+    p.almacen AS stock
 FROM productos p
 LEFT JOIN registro_usuario ru
     ON ru.id_producto = p.id
    AND ru.fecha_procesado IS NOT NULL
    AND DATE(ru.fecha_procesado) >= CURDATE() - INTERVAL 1 YEAR
-WHERE ru.id_producto IS NULL;
+WHERE ru.id_producto IS NULL AND p.estatus = 1 AND p.almacen > 10 LIMIT 30;
 """
 
 #=========================================================
@@ -528,14 +545,14 @@ ORDER BY monto_vendido DESC LIMIT 20;
 # =========================================================
 SQL_ANALYTICS_MONTHLY_SALES_TREND = """
 SELECT
-    DATE_FORMAT(f.fecha_procesado, '%Y-%m') AS periodo,
+    DATE_FORMAT(f.fecha_procesado, '%%Y-%%m') AS periodo,
     COUNT(DISTINCT f.orden) AS pedidos,
     ROUND(SUM(f.total), 2) AS ventas_totales,
     ROUND(AVG(f.total), 2) AS ticket_promedio
 FROM folios f
 WHERE f.fecha_procesado IS NOT NULL
   AND DATE(f.fecha_procesado) >= CURDATE() - INTERVAL 1 YEAR
-GROUP BY DATE_FORMAT(f.fecha_procesado, '%Y-%m')
+GROUP BY DATE_FORMAT(f.fecha_procesado, '%%Y-%%m')
 ORDER BY periodo;
 """
 
@@ -693,4 +710,69 @@ ANALYTICS_QUERIES = {
     "top_clients": SQL_ANALYTICS_TOP_CLIENTS,
     "inventory_by_storehouse": SQL_ANALYTICS_INVENTORY_BY_STOREHOUSE,
     "products_without_sales_last_year": SQL_ANALYTICS_PRODUCTS_WITHOUT_SALES_LAST_YEAR,
+}
+
+
+TREND_QUERIES = {
+    "monthly_sales_trend": SQL_ANALYTICS_SALES_BY_MONTH,
+}
+
+DOCUMENT_QUERIES = {
+    "top_products": SQL_ANALYTICS_TOP_PRODUCTS,
+}
+
+QUERY_CLIENT = {
+    "top_clients": SQL_ANALYTICS_TOP_CLIENTS,
+}
+
+QUERY_STOREHOUSE = {
+    "inventory_by_storehouse": SQL_ANALYTICS_INVENTORY_BY_STOREHOUSE,
+}
+
+QUERY_PRODUCT = {
+    "products_without_sales_last_year": SQL_ANALYTICS_PRODUCTS_WITHOUT_SALES_LAST_YEAR,
+}
+
+QUERY_CATEGORY = {
+    "top_categories": SQL_ANALYTICS_TOP_CATEGORIES,
+}
+
+QUERY_MONTH = {
+    "sales_by_month": SQL_ANALYTICS_MONTHLY_SALES_TREND,
+}
+
+QUERY_ZONE = {
+    "sales_by_state": SQL_ANALYTICS_SALES_BY_STATE,
+}
+
+#diccionario final para pipeline
+ANALYTICS_QUERY_GROUPS = {
+    "top_products": {
+        "query_name": "top_products",
+        "query_sql": SQL_ANALYTICS_TOP_PRODUCTS,
+    },
+    "top_clients": {
+        "query_name": "top_clients",
+        "query_sql": SQL_ANALYTICS_TOP_CLIENTS,
+    },
+    "inventory_by_storehouse": {
+        "query_name": "inventory_by_storehouse",
+        "query_sql": SQL_ANALYTICS_INVENTORY_BY_STOREHOUSE,
+    },
+    "products_without_sales_last_year": {
+        "query_name": "products_without_sales_last_year",
+        "query_sql": SQL_ANALYTICS_PRODUCTS_WITHOUT_SALES_LAST_YEAR,
+    },
+    "top_categories": {
+        "query_name": "top_categories",
+        "query_sql": SQL_ANALYTICS_TOP_CATEGORIES,
+    },
+    "sales_by_month": {
+        "query_name": "sales_by_month",
+        "query_sql": SQL_ANALYTICS_SALES_BY_MONTH,
+    },
+    "sales_by_state": {
+        "query_name": "sales_by_state",
+        "query_sql": SQL_ANALYTICS_SALES_BY_STATE,
+    },
 }

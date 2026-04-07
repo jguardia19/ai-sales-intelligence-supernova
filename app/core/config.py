@@ -20,6 +20,10 @@ class Settings(BaseSettings):
     warehouse_db_password: str
     warehouse_db_name: str
 
+    openai_api_key: str
+    chroma_persist_dir: str = "./chroma_storage"
+    chroma_collection_name: str = "ai_sales_supernova"
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
