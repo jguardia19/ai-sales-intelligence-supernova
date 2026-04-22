@@ -31,7 +31,7 @@ def run():
         generator = item["generator"]
 
         print("=" * 100)
-        print(f"[PIPELINE] Procesando dataset: {dataset_name}")
+        print(f"Procesando dataset: {dataset_name}")
 
         query_sql = query_dict[query_key]
 
@@ -42,21 +42,21 @@ def run():
         )
 
         df_clean = cleaner(df_raw)
-        print(f"[PIPELINE] Filas limpias: {len(df_clean)}")
+        print(f"Filas limpias: {len(df_clean)}")
 
-        print(f"[PIPELINE] Transformando dataset: {dataset_name}")
+        print(f"Transformando dataset: {dataset_name}")
         df_transformed = transformer(df_clean)
 
-        print(f"[PIPELINE] Generando documentos: {dataset_name}")
+        print(f"Generando documentos: {dataset_name}")
         documents = generator(df_transformed)
         documents = [clean_document_for_json(doc) for doc in documents]
 
-        print(f"[PIPELINE] Documentos generados para {dataset_name}: {len(documents)}")
+        print(f"Documentos generados para {dataset_name}: {len(documents)}")
 
         all_documents.extend(documents)
 
     print("=" * 100)
-    print(f"[PIPELINE] Total documentos acumulados: {len(all_documents)}")
+    print(f"Total documentos acumulados: {len(all_documents)}")
 
     save_documents_to_json(
         all_documents,

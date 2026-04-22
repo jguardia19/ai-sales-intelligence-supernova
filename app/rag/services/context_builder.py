@@ -1,30 +1,61 @@
-from typing import List
-
-
-def build_analytical_context(results: List[dict], max_chars: int = 6000) -> str:
-    """
-    Construye un contexto legible y analítico a partir de los chunks recuperados.
-    """
-    sections = []
+def build_analytical_context(chunks: list[dict], max_chars: int = 7000) -> str:
+    parts = []
     total_chars = 0
 
-    for idx, item in enumerate(results, start=1):
-        metadata = item.get("metadata", {})
-        document_type = item.get("document_type", "unknown")
-        title = metadata.get("source_title") or metadata.get("title") or item.get("document_id", "Sin título")
-        text = item.get("text", "").strip()
+    useful_keys = [
+        "document_group",
+        "metric_scope",
+        "ranking",
+        "ranking_revenue",
+        "ranking_stock",
+        "ranking_month",
+        "product_name",
+        "client_name",
+        "category_name",
+        "warehouse_name",
+        "codigo",
+        "nivel",
+        "nivel_alerta",
+        "participacion",
+        "sales_share_pct",
+        "revenue_amount",
+        "units_sold",
+        "orders_count",
+        "avg_ticket",
+        "stock_total",
+        "stock",
+        "period",
+        "month",
+        "year",
+        "sales_variation_pct",
+        "recommended_action",
+    ]
 
-        block = (
-            f"[Documento {idx}]\n"
-            f"Tipo: {document_type}\n"
-            f"Título: {title}\n"
-            f"Contenido:\n{text}\n"
+    for i, chunk in enumerate(chunks, start=1):
+        chunk_id = chunk.get("chunk_id", "N/A")
+        text = chunk.get("text", "")
+        metadata = chunk.get("metadata", {}) or {}
+        distance = chunk.get("distance", None)
+
+        meta_text = ", ".join(
+            f"{key}: {metadata[key]}"
+            for key in useful_keys
+            if key in metadata and metadata[key] is not None
         )
 
-        if total_chars + len(block) > max_chars:
+        section = f"""
+    [Chunk {i}]
+    chunk_id: {chunk_id}
+    distance: {distance}
+    metadata: {meta_text}
+    text:
+    {text}
+    """
+
+        if total_chars + len(section) > max_chars:
             break
 
-        sections.append(block)
-        total_chars += len(block)
+        parts.append(section.strip())
+        total_chars += len(section)
 
-    return "\n".join(sections).strip()
+    return "\n\n".join(parts)

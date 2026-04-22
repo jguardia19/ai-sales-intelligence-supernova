@@ -1,0 +1,48 @@
+{
+  "total_runs": 60,
+  "avg_latency_ms": 3430.14,
+  "median_latency_ms": 3416.43,
+  "max_latency_ms": 5837.2,
+  "avg_hallucination_score": 0.8678,
+  "avg_hallucination_score": 0.8678,
+  "avg_quality_score": 0.934,
+  "avg_hallucination_score": 0.8678,
+  "avg_quality_score": 0.934,
+  "avg_hallucination_score": 0.8678,
+  "avg_hallucination_score": 0.8678,
+  "avg_quality_score": 0.934,
+  "avg_hallucination_score": 0.8678,
+  "avg_quality_score": 0.934,
+  "avg_hallucination_score": 0.8678,
+  "avg_quality_score": 0.934,
+  "per_temperature": {
+  "avg_hallucination_score": 0.8678,
+  "avg_quality_score": 0.934,
+  "per_temperature": {
+    "0.0": {
+    "0.0": {
+      "count": 20,
+      "avg_latency_ms": 3584.44,
+      "count": 20,
+      "avg_latency_ms": 3584.44,
+      "avg_latency_ms": 3584.44,
+      "avg_hallucination_score": 0.8735,
+      "avg_hallucination_score": 0.8735,
+      "avg_quality_score": 0.9295
+    },
+    },
+    "0.3": {
+    "0.3": {
+      "count": 20,
+      "avg_latency_ms": 3409.93,
+      "avg_hallucination_score": 0.87,
+      "avg_quality_score": 0.9295
+    },
+    "0.7": {
+      "count": 20,
+      "avg_latency_ms": 3296.05,
+      "avg_hallucination_score": 0.86,
+      "avg_quality_score": 0.943
+    }
+  }
+}

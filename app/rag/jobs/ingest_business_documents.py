@@ -18,25 +18,31 @@ def run():
     if not file_path.exists():
         raise FileNotFoundError(f"No existe el archivo: {file_path}")
 
-    print("[INGEST] Cargando documentos...")
-    documents = load_business_documents(str(file_path))
-    print(f"[INGEST] Documentos cargados: {len(documents)}")
+    #print("[CARGA] Cargando documentos...")
 
-    print("[INGEST] Generando chunks...")
+    documents = load_business_documents(str(file_path))
+
+    #print(f"[CARGA] Documentos cargados: {len(documents)}")
+
+    #print("[CARGA] Generando chunks...")
+
     chunks = chunk_business_documents(
         documents,
         max_tokens=300,
         overlap_tokens=40,
     )
-    print(f"[INGEST] Chunks generados: {len(chunks)}")
+    
+    #print(f"[CARGA] Chunks generados: {len(chunks)}")
 
     total_estimated_tokens = sum(item["estimated_tokens"] for item in chunks)
-    print(f"[INGEST] Tokens estimados totales: {total_estimated_tokens}")
+    
+    #print(f"[CARGA] Tokens estimados totales: {total_estimated_tokens}")
 
-    print("[INGEST] Indexando en ChromaDB...")
+    print("[CARGA] CARGANDO CHROMADB")
+
     index_chunks_in_chroma(chunks, batch_size=100)
 
-    print("[INGEST] Proceso completado correctamente.")
+    #print("[CARGA] Proceso completado correctamente.")
 
 
 if __name__ == "__main__":

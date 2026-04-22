@@ -1,29 +1,36 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
+from flask import Flask, jsonify
+from flask_cors import CORS
 
-from app.api.v1.api import api_router
-
-app = FastAPI(title="AI Sales Intelligence API")
-
-origins = [
-    "http://localhost:9000",
-    "http://localhost:9001",
-    "http://127.0.0.1:9000",
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-]
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-app.include_router(api_router, prefix="/api/v1")
+from app.api.v1.api import api_v1_bp
 
 
-@app.get("/health")
-def health():
-    return {"status": "ok"}
+def create_app():
+    app = Flask(__name__)
+
+    origins = [
+        "http://localhost:9000",
+        "http://localhost:9001",
+        "http://127.0.0.1:9000",
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ]
+
+    CORS(
+        app,
+        resources={r"/*": {"origins": origins}},
+        supports_credentials=True
+    )
+
+    app.register_blueprint(api_v1_bp)
+
+    @app.route("/health", methods=["GET"])
+    def health():
+        return jsonify({"status": "ok"})
+
+    return app
+
+
+app = create_app()
+
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=8000, debug=True)

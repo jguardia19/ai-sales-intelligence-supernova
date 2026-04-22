@@ -1,0 +1,5 @@
+## mejorar consulta chormadb
+
+## aislamiento de la base de datos y del retriever
+
+## queries dinamicas

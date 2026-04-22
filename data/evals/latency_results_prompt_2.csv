@@ -1,0 +1,17 @@
+query,retrieved_chunks,query_chars,context_chars,answer_chars,prompt_estimated_tokens,embedding_ms,retrieval_ms,context_build_ms,generation_ms,total_ms
+¿Qué categorías dominan el negocio este año?,8,44,3617,239,915,966.35,59.25,0.03,2815.98,3841.6
+¿Qué productos estancados representan el mayor riesgo?,8,54,4484,245,1134,235.01,2.19,0.01,1191.69,1428.91
+¿Qué clientes son los más valiosos y por qué?,8,45,3812,232,964,399.65,2.7,0.02,1844.79,2247.16
+¿Qué hallazgos ves en el inventario por almacén?,8,48,3472,390,880,951.82,5.3,0.03,1806.54,2763.69
+¿Qué oportunidades comerciales observas según los documentos?,8,61,4075,322,1034,526.97,5.62,0.03,1622.16,2154.78
+,,,,,,,,,,
+"SYSTEM_PROMPT = """"""
+Responde como analista de negocio.
+
+Reglas:
+- Usa solo el contexto.
+- No inventes datos.
+- Si no hay informaci�n suficiente, dilo.
+
+Responde en m�ximo 3 l�neas.
+""""""",,,,,,,,,,

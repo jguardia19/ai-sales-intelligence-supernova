@@ -21,6 +21,6 @@ def append_dataframe(df: pd.DataFrame, table_name: str, engine: Engine) -> None:
         chunksize=1000
     )
 
-    print(f"[LOAD] {table_name}: {len(df)} filas insertadas.")
+    print(f" {table_name}: {len(df)} filas insertadas.")
 
     

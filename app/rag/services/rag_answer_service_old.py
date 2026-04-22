@@ -1,7 +1,7 @@
 from openai import OpenAI
 from app.core.config import settings
-from app.rag.chroma.query import retrieve_context_smart
-from app.rag.services.context_builder import build_analytical_context
+from app.rag.chroma.query_old import search_similar_chunks
+from app.rag.services.context_builder_old import build_analytical_context
 from app.rag.prompts.analyst_prompt import SYSTEM_ANALYST_PROMPT
 
 client = OpenAI(api_key=settings.openai_api_key)
@@ -13,34 +13,30 @@ def generate_rag_answer(
     collection_name: str = "ai_sales_supernova",
     model: str = "gpt-4.1-mini",
 ) -> dict:
-    retrieval = retrieve_context_smart(
-        user_query=user_query,
+    """
+    Recupera contexto desde ChromaDB y genera una respuesta analítica.
+    """
+    retrieved_chunks = search_similar_chunks(
+        query=user_query,
         top_k=top_k,
         collection_name=collection_name,
     )
 
-    retrieved_chunks = retrieval["results"]
-    retrieval_intent = retrieval["intent"]
+    #print(f"chunks:{retrieved_chunks}")
+
 
     context = build_analytical_context(retrieved_chunks, max_chars=7000)
 
     user_prompt = f"""
-Pregunta del usuario:
-{user_query}
+        Pregunta del usuario:
+        {user_query}
 
-Tipo de recuperación:
-{retrieval_intent}
+        Contexto recuperado:
+        {context}
 
-Contexto recuperado:
-{context}
-
-Instrucciones:
-1. Responde únicamente con base en el contexto recuperado.
-2. No inventes cifras, rankings, productos, clientes, categorías ni almacenes.
-3. Si la pregunta pide top, ranking o comparativa, usa solo los elementos claramente respaldados por el contexto.
-4. Si no hay suficiente evidencia, dilo claramente.
-5. Responde en español con tono analítico, ejecutivo y claro.
-"""
+        Instrucción:
+        Responde con un análisis útil, claro y ejecutivo basado únicamente en el contexto recuperado.
+        """
 
     response = client.chat.completions.create(
         model=model,
@@ -48,14 +44,13 @@ Instrucciones:
             {"role": "system", "content": SYSTEM_ANALYST_PROMPT},
             {"role": "user", "content": user_prompt},
         ],
-        temperature=0.2,
+        temperature=0.7,
     )
 
     answer = response.choices[0].message.content
 
     return {
         "query": user_query,
-        "retrieval_intent": retrieval_intent,
         "answer": answer,
         "context": context,
         "sources": retrieved_chunks,

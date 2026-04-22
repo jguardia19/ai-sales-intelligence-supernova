@@ -1,0 +1,1180 @@
+
+{
+  "model": "gpt-5.4-mini",
+  "temperatures": [
+    0.0,
+    0.3,
+    0.7
+  ],
+  "top_k": 8,
+  "summary": {
+    "total_runs": 60,
+    "avg_latency_ms": 3430.14,
+    "median_latency_ms": 3416.43,
+    "max_latency_ms": 5837.2,
+    "avg_hallucination_score": 0.8678,
+    "avg_quality_score": 0.934,
+    "per_temperature": {
+      "0.0": {
+        "count": 20,
+        "avg_latency_ms": 3584.44,
+        "avg_hallucination_score": 0.8735,
+        "avg_quality_score": 0.9295
+      },
+      "0.3": {
+        "count": 20,
+        "avg_latency_ms": 3409.93,
+        "avg_hallucination_score": 0.87,
+        "avg_quality_score": 0.9295
+      },
+      "0.7": {
+        "count": 20,
+        "avg_latency_ms": 3296.05,
+        "avg_hallucination_score": 0.86,
+        "avg_quality_score": 0.943
+      }
+    }
+  },
+  "results": [
+    {
+      "query": "¿Cuál es la categoría con mayor ingreso total?",
+      "temperature": 0.0,
+      "answer": "La categoría con mayor ingreso total es **Lamparas para uñas**, con **16,321,841.72 pesos** en ventas totales.\n\nAdemás, destaca porque:\n- Tiene la **mayor participación sobre ventas totales**: **17.99%**\n- Ocupa el **ranking 1** de categoría\n- Está clasificada como **ESTRELLA**\n- El contexto indica explícitamente que es **la categoría con mayor generación de ingresos del negocio**\n\nSi quieres, también puedo compararla contra las siguientes categorías con mayor ingreso.",
+      "latency_ms": 5282.92,
+      "hallucination_score": 0.99,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta coincide con el contexto: 'Lamparas para uñas' tiene las ventas totales más altas y el propio contexto indica explícitamente que es la categoría con mayor generación de ingresos.",
+      "quality_score": 0.99,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta correcta, clara y totalmente alineada con el contexto. Identifica la categoría líder en ingresos y aporta datos de soporte relevantes sin exceso.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 917,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuál es la categoría con mayor ingreso total?",
+      "temperature": 0.3,
+      "answer": "La categoría con mayor ingreso total es **Lamparas para uñas**, con **16,321,841.72 pesos** en ventas totales.\n\nAdemás, destaca como:\n- **Ranking de categoría: 1**\n- **Participación sobre ventas totales: 17.99%**\n- **Nivel de desempeño: ESTRELLA**\n\nEsto indica que es la principal generadora de ingresos del negocio dentro del contexto proporcionado.",
+      "latency_ms": 2970.34,
+      "hallucination_score": 0.99,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta coincide con el contexto: 'Lamparas para uñas' tiene las ventas totales más altas (16,321,841.72 pesos) y el contexto indica explícitamente que es la categoría con mayor generación de ingresos.",
+      "quality_score": 0.99,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta correcta, clara y totalmente alineada con el contexto. Identifica la categoría con mayor ingreso total y añade datos de soporte relevantes sin exceso.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 917,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuál es la categoría con mayor ingreso total?",
+      "temperature": 0.7,
+      "answer": "La categoría con mayor ingreso total es **Lamparas para uñas**, con **16,321,841.72 pesos** en ventas totales.\n\nAdemás, es la **categoría #1** en el ranking y representa **17.99%** de las ventas totales, por lo que es el principal motor de ingresos del negocio.",
+      "latency_ms": 1844.59,
+      "hallucination_score": 0.99,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta coincide con el contexto: 'Lamparas para uñas' tiene las ventas totales más altas y es la categoría con mayor generación de ingresos.",
+      "quality_score": 0.99,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, directa y totalmente alineada con el contexto. Identifica correctamente la categoría con mayor ingreso total y aporta datos de soporte relevantes (ventas, ranking y participación).",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 917,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuál es el producto más vendido en el año?",
+      "temperature": 0.0,
+      "answer": "El producto más vendido del año es **Parche hidrogel para pestañas (código PE-04)**.\n\n### Evidencia clave\n- **Unidades vendidas en el año:** 32,761\n- **Monto vendido:** 955,479.5 pesos\n- **Ranking del producto:** 1\n- **Observación:** “Este es el producto más vendido del año.”\n\n### Lectura ejecutiva\nEste producto lidera claramente el desempeño anual y pertenece a la categoría **Utensilios y Herramientas**, que además es una de las categorías más fuertes del negocio. Esto sugiere que es un producto estratégico para ventas y rotación.\n\nSi quieres, también puedo decirte **cuál es la categoría más vendida** o hacer un **top de productos** con los datos disponibles.",
+      "latency_ms": 2088.19,
+      "hallucination_score": 0.99,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta coincide con el contexto: el producto 'Parche hidrogel para pestañas' aparece como ranking 1 y la observación indica explícitamente que es el más vendido del año. La mención de que pertenece a 'Utensilios y Herramientas' también está soportada. La frase sobre ser 'estratégico para ventas y rotación' es una inferencia razonable, no una alucinación fuerte.",
+      "quality_score": 0.98,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, relevante y totalmente alineada con el contexto. Identifica correctamente el producto más vendido y aporta evidencia ejecutiva útil. Solo podría ser ligeramente más breve.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 958,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuál es el producto más vendido en el año?",
+      "temperature": 0.3,
+      "answer": "El producto más vendido del año es **Parche hidrogel para pestañas (código PE-04)**.\n\n### Evidencia clave\n- **Unidades vendidas en el año:** 32,761\n- **Monto vendido:** 955,479.5 pesos\n- **Ranking del producto:** 1\n- **Observación:** “Este es el producto más vendido del año.”\n\n### Lectura ejecutiva\nEste producto lidera el negocio a nivel de producto y pertenece a la categoría **Utensilios y Herramientas**, que además tiene un desempeño fuerte dentro del portafolio. Esto sugiere que es un artículo clave para las ventas anuales y merece prioridad en abastecimiento, disponibilidad y seguimiento comercial.",
+      "latency_ms": 1915.86,
+      "hallucination_score": 0.99,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta está soportada por el contexto: la Fuente 4 indica explícitamente que Parche hidrogel para pestañas (PE-04) es el producto más vendido del año, con ranking 1 y la observación correspondiente. La lectura ejecutiva añade una interpretación razonable basada en la categoría y su desempeño, sin introducir datos nuevos.",
+      "quality_score": 0.99,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, directa y totalmente alineada con el contexto. Identifica correctamente el producto más vendido, aporta evidencia cuantitativa y añade una lectura ejecutiva útil para negocio.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 958,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuál es el producto más vendido en el año?",
+      "temperature": 0.7,
+      "answer": "El producto más vendido del año es **Parche hidrogel para pestañas (código PE-04)**.\n\n### Evidencia clave\n- **Unidades vendidas en el año:** 32,761\n- **Monto vendido:** 955,479.5 pesos\n- **Ranking del producto:** 1\n- **Observación del contexto:** “**Este es el producto más vendido del año**”\n\n### Lectura ejecutiva\nEste producto lidera el desempeño individual y pertenece a la categoría **Utensilios y Herramientas**, que además tiene un desempeño fuerte dentro del negocio. Esto sugiere que es un producto clave para priorizar en inventario, abastecimiento y estrategia comercial.\n\nSi quieres, también puedo decirte **qué categoría vende más** o **cuáles son los 3 productos líderes**.",
+      "latency_ms": 2366.05,
+      "hallucination_score": 0.99,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta coincide con el contexto: identifica correctamente a Parche hidrogel para pestañas (PE-04) como el producto más vendido del año y usa datos explícitos de la fuente.",
+      "quality_score": 0.98,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, directa y totalmente alineada con el contexto. Identifica correctamente el producto más vendido, aporta evidencia relevante y añade una lectura ejecutiva útil sin desviarse de la pregunta.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 958,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuál es el estado con más ventas?",
+      "temperature": 0.0,
+      "answer": "El estado con más ventas en el contexto proporcionado es **Baja California**, con **4,697,588.3 pesos** en ventas totales.\n\n### Comparativo rápido de los principales estados\n1. **Baja California**: 4,697,588.3 pesos  \n2. **Sonora**: 2,483,633.0 pesos  \n3. **Sinaloa**: 2,395,659.1 pesos  \n4. **Quintana Roo**: 2,295,983.5 pesos  \n\n### Lectura ejecutiva\n- **Baja California lidera claramente** en ventas totales entre los estados disponibles.\n- Además, tiene un **ranking comercial 6** y un **nivel comercial: ZONA IMPORTANTE**, lo que refuerza su peso dentro del negocio.\n- Aunque lidera en ventas, su **nivel de concentración es bajo**, lo que sugiere una base relativamente distribuida y una oportunidad para seguir creciendo sin depender excesivamente de pocos clientes.\n\nSi quieres, también puedo decirte **qué estado tiene más pedidos**, **mejor ticket promedio** o hacer un **ranking completo por ventas**.",
+      "latency_ms": 2737.57,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta es consistente con el contexto: Baja California tiene las ventas totales más altas entre los estados सूचीados. No introduce datos no soportados, aunque añade una lectura ejecutiva interpretativa que sigue siendo compatible con la fuente.",
+      "quality_score": 0.98,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, directa y bien sustentada con el contexto. Identifica correctamente a Baja California como el estado con más ventas y añade un comparativo útil y síntesis ejecutiva. Solo hay un detalle menor: el valor de Quintana Roo en el comparativo parece no coincidir exactamente con la fuente (debería ser 2,295,983.5), aunque no afecta la conclusión principal.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1041,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuál es el estado con más ventas?",
+      "temperature": 0.3,
+      "answer": "El estado con más ventas en el contexto proporcionado es **Baja California**, con **4,697,588.3 pesos** en ventas totales.\n\n### Comparativo rápido de los principales estados\n1. **Baja California** — 4,697,588.3 pesos  \n2. **Sonora** — 2,483,633.0 pesos  \n3. **Sinaloa** — 2,395,659.1 pesos  \n4. **Quintana Roo** — 2,295,983.5 pesos  \n\n### Lectura ejecutiva\n- **Baja California lidera claramente** en ventas totales y también tiene el **mejor ranking entre los estados mostrados**: puesto **6**.\n- Además, presenta una **participación en ventas de 5.16%**, la más alta del grupo, lo que refuerza su peso comercial.\n- En segundo y tercer lugar aparecen **Sonora** y **Sinaloa**, con niveles de venta bastante cercanos entre sí.\n\nSi quieres, también puedo decirte **qué estado tiene más clientes, más pedidos o mejor ticket promedio**.",
+      "latency_ms": 2930.19,
+      "hallucination_score": 0.99,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los datos del contexto: Baja California tiene 4,697,588.3 pesos en ventas totales, superior a los demás estados listados. El comparativo y la conclusión están soportados por las fuentes.",
+      "quality_score": 0.98,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, directa y bien sustentada con el dato correcto del contexto. Sintetiza adecuadamente y añade un comparativo útil para negocio. Solo podría mejorarse evitando una lectura ligeramente interpretativa sobre el ranking, aunque no afecta la respuesta principal.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1041,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuál es el estado con más ventas?",
+      "temperature": 0.7,
+      "answer": "El estado con más ventas en el contexto proporcionado es **Baja California**, con **4,697,588.3 pesos** en ventas totales.\n\nComo referencia, le siguen:\n- **Sonora**: 2,483,633.0 pesos\n- **Sinaloa**: 2,395,659.1 pesos\n- **Quintana Roo**: 2,295,983.5 pesos\n\n**Conclusión ejecutiva:** Baja California lidera claramente en ventas entre los estados disponibles y además tiene una **participación en ventas de 5.16%**, la más alta del grupo mostrado.",
+      "latency_ms": 2128.36,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta es fiel al contexto: Baja California tiene las ventas totales más altas entre los estados सूचीados. No introduce datos fuera del contexto; solo resume y compara correctamente.",
+      "quality_score": 0.98,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, directa y se apega al contexto. Identifica correctamente a Baja California como el estado con más ventas y aporta comparativos útiles. Solo podría mejorarse la síntesis eliminando un poco de detalle secundario.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1041,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuántos productos no se vendieron en el último año?",
+      "temperature": 0.0,
+      "answer": "No es posible determinar **cuántos productos no se vendieron en el último año** con el contexto disponible.\n\nLo que sí se observa es información de **ventas por categoría y por un producto específico**, pero **no hay un listado completo de productos ni datos de inventario o catálogo total** para identificar cuáles tuvieron **0 unidades vendidas**.\n\n### Hallazgo clave\n- El contexto muestra productos/categorías con ventas positivas.\n- **No incluye productos sin ventas**, por lo que no se puede calcular el número de productos no vendidos.\n\n### Para responderlo con precisión, haría falta:\n- El **catálogo total de productos** del último año.\n- Las **unidades vendidas por producto**.\n- Idealmente, un campo de **inventario o ventas = 0**.\n\nSi quieres, puedo ayudarte a identificar **qué categorías tienen menor rotación** o **cuáles productos muestran desempeño bajo** con la información disponible.",
+      "latency_ms": 2253.55,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta no inventa datos y se limita a señalar que el contexto no permite determinar cuántos productos no se vendieron. Esa conclusión está bien soportada porque solo hay ventas positivas por categoría y un producto, sin catálogo completo ni datos de productos con 0 ventas.",
+      "quality_score": 0.96,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, ejecutiva y se apega al contexto: explica correctamente que no es posible determinar cuántos productos no se vendieron porque solo hay datos de ventas positivas por categoría/producto y no un catálogo completo. Como mejora menor, podría ser más breve.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 959,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuántos productos no se vendieron en el último año?",
+      "temperature": 0.3,
+      "answer": "No es posible determinar **cuántos productos no se vendieron en el último año** con el contexto proporcionado.\n\nLo que sí se observa es que el contexto solo incluye **categorías y un producto específico con ventas registradas**, pero **no contiene un listado completo de productos ni información de inventario o productos con ventas cero**. Por lo tanto, no se puede calcular cuántos no se vendieron.\n\nSi quieres, puedo ayudarte a:\n- identificar las categorías con **menor rotación**,\n- detectar **productos/categorías de bajo desempeño**,\n- o estimar el problema si compartes el **catálogo completo de productos** con sus ventas anuales.",
+      "latency_ms": 2456.99,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se mantiene fiel al contexto: indica correctamente que no hay información suficiente para determinar cuántos productos no se vendieron. No introduce datos inventados ni conclusiones no soportadas.",
+      "quality_score": 0.93,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, útil y se apega al contexto: reconoce correctamente que no hay datos suficientes para determinar cuántos productos no se vendieron. Sintetiza bien la limitación y ofrece alternativas pertinentes.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 959,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuántos productos no se vendieron en el último año?",
+      "temperature": 0.7,
+      "answer": "No es posible determinar **cuántos productos no se vendieron en el último año** con el contexto proporcionado.\n\nLo que sí se observa es que hay categorías y productos con **ventas muy bajas**, por ejemplo:\n- **Utensilios**: 271 unidades vendidas\n- **Productos Escolares**: 1,027 unidades\n- **Productos Faciales**: 3,555 unidades\n\nPero **no hay información sobre el total de productos existentes, el catálogo completo ni productos con 0 ventas**, que sería necesario para calcular cuántos no se vendieron.\n\nSi quieres, puedo ayudarte a identificar **las categorías con menor rotación** o **los productos con peor desempeño** usando estos datos.",
+      "latency_ms": 2559.41,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta es fiel al contexto: no hay datos sobre el total de productos ni sobre productos con 0 ventas, por lo que concluye correctamente que no es posible determinar cuántos no se vendieron. Solo añade ejemplos de bajas ventas que sí aparecen en el contexto.",
+      "quality_score": 0.96,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, ejecutiva y se apega al contexto: reconoce correctamente que no hay datos suficientes para calcular cuántos productos no se vendieron. Además, distingue entre bajas ventas y ausencia de ventas, lo cual evita una inferencia incorrecta.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 959,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "Muestra el top 5 de productos más vendidos.",
+      "temperature": 0.0,
+      "answer": "Con el contexto disponible, este es el **top 5 de productos más vendidos** según el **ranking de producto** y las **unidades vendidas en el año**:\n\n1. **Lampara SUN 5 48W - WHITE**  \n   - Código: **LA-02**  \n   - Unidades vendidas: **12,446**  \n   - Monto vendido: **897,007.4 pesos**  \n   - Ranking: **2**\n\n2. **Lampara SUN 5 48W - PINK**  \n   - Código: **LA-02**  \n   - Unidades vendidas: **11,773**  \n   - Monto vendido: **836,096.99 pesos**  \n   - Ranking: **3**\n\n3. **Maniquí para pestañas - cabeza**  \n   - Código: **PE-21**  \n   - Unidades vendidas: **9,741**  \n   - Monto vendido: **524,751.91 pesos**  \n   - Ranking: **9**\n\n4. **Cepillo Alaciador**  \n   - Código: **EL-65Y**  \n   - Unidades vendidas: **5,567**  \n   - Monto vendido: **485,953.6 pesos**  \n   - Ranking: **11**\n\n5. **Proyector Blizzard con 16 figuras Navideñas**  \n   - Código: **EL-385**  \n   - Unidades vendidas: **7,691**  \n   - Monto vendido: **386,563.0 pesos**  \n   - Ranking: **20**\n\n### Hallazgos clave\n- **Lámpara SUN 5 48W** domina claramente el negocio: sus dos variantes ocupan los primeros lugares y concentran una participación relevante en ventas.\n- Hay una **concentración fuerte en productos de alto desempeño**, especialmente en categorías como **Lámparas para uñas**",
+      "latency_ms": 2998.89,
+      "hallucination_score": 0.42,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta incluye una lista top 5, pero mezcla criterios y contiene una conclusión no soportada: afirma que el top 5 es 'según el ranking de producto y las unidades vendidas', cuando el contexto solo muestra rankings individuales y unidades, no un ranking global calculado. Además, el orden es inconsistente: Proyector Blizzard (7,691 unidades) aparece después de Cepillo Alaciador (5,567), aunque tiene más unidades. También añade un hallazgo sobre concentración fuerte en ventas que no está claramente sustentado por el contexto.",
+      "quality_score": 0.72,
+      "quality_label": "media",
+      "quality_issues": "La respuesta es clara y útil, pero tiene una debilidad importante de apego al contexto: el top 5 se presenta mezclando ranking y unidades vendidas, y además incluye un producto con menos unidades vendidas que otro omitido (Proyector Blizzard tiene 7,691 unidades, pero aparece detrás de Cepillo Alaciador con 5,567). También añade hallazgos no solicitados y no justifica el criterio de ordenamiento con precisión.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 969,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "Muestra el top 5 de productos más vendidos.",
+      "temperature": 0.3,
+      "answer": "Con el contexto disponible, este es el **top 5 de productos más vendidos** según el **ranking del producto**:\n\n1. **Lampara SUN 5 48W - WHITE**  \n   - Código: LA-02  \n   - Unidades vendidas: **12,446**  \n   - Monto vendido: **897,007.4 pesos**  \n   - Ranking: **2**\n\n2. **Lampara SUN 5 48W - PINK**  \n   - Código: LA-02  \n   - Unidades vendidas: **11,773**  \n   - Monto vendido: **836,096.99 pesos**  \n   - Ranking: **3**\n\n3. **Maniquí para pestañas - cabeza**  \n   - Código: PE-21  \n   - Unidades vendidas: **9,741**  \n   - Monto vendido: **524,751.91 pesos**  \n   - Ranking: **9**\n\n4. **Cepillo Alaciador**  \n   - Código: EL-65Y  \n   - Unidades vendidas: **5,567**  \n   - Monto vendido: **485,953.6 pesos**  \n   - Ranking: **11**\n\n5. **Proyector Blizzard con 16 figuras Navideñas**  \n   - Código: EL-385  \n   - Unidades vendidas: **7,691**  \n   - Monto vendido: **386,563.0 pesos**  \n   - Ranking: **20**\n\n### Hallazgo ejecutivo\n- Los productos líderes están concentrados en **Lamparas para uñas**, que dominan los primeros lugares.\n- El producto con mayor volumen dentro del contexto es **Lampara SUN 5 48W - WHITE**, seguido muy de cerca por la versión **PINK**.\n- Aunque algunos productos tienen menos unidades que otros, su **monto vendido** sigue siendo relevante, lo que sugiere buen",
+      "latency_ms": 3685.74,
+      "hallucination_score": 0.18,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta inventa un 'top 5' completo a partir de solo 5 productos disponibles, pero el contexto no confirma que sean los 5 más vendidos globalmente. Además, hay errores: 'Maniquí para pestañas - cabeza' tiene ranking 9, 'Cepillo Alaciador' ranking 11 y 'Proyector Blizzard...' ranking 20, por lo que el orden presentado no corresponde al ranking. También el 'hallazgo ejecutivo' añade conclusiones no soportadas claramente por el contexto.",
+      "quality_score": 0.78,
+      "quality_label": "media",
+      "quality_issues": "La respuesta es clara y útil, pero no se apega del todo al contexto: solo hay 5 productos disponibles y se presentan como top 5, aunque el criterio usado es ranking del producto y no necesariamente unidades vendidas. Además, el cierre ejecutivo queda incompleto y hay una ligera inconsistencia al destacar el mayor volumen sin comparar todos los productos del contexto.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 969,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "Muestra el top 5 de productos más vendidos.",
+      "temperature": 0.7,
+      "answer": "Con el contexto disponible, estos son los **5 productos más vendidos** según el **ranking de producto** y las **unidades vendidas** reportadas:\n\n| Posición | Producto | Código | Unidades vendidas | Monto vendido | Participación sobre ventas totales |\n|---|---|---:|---:|---:|---:|\n| 1 | **Lampara SUN 5 48W - WHITE** | LA-02 | 12,446 | 897,007.4 pesos | 8.02% |\n| 2 | **Lampara SUN 5 48W - PINK** | LA-02 | 11,773 | 836,096.99 pesos | 7.47% |\n| 3 | **Maniquí para pestañas - cabeza** | PE-21 | 9,741 | 524,751.91 pesos | 4.69% |\n| 4 | **Proyector Blizzard con 16 figuras Navideñas** | EL-385 | 7,691 | 386,563.0 pesos | 3.45% |\n| 5 | **Cepillo Alaciador** | EL-65Y | 5,567 | 485,953.6 pesos | 4.34% |\n\n### Hallazgos clave\n- **Liderazgo claro de Lampara SUN 5 48W**, en sus dos variantes: WHITE y PINK. Juntas concentran un volumen muy relevante y muestran que esta línea es un motor comercial.\n- El **top 5 mezcla productos de distintas categorías**, lo que sugiere una demanda diversificada, aunque con fuerte peso de **Lámparas para uñas**.\n- Todos los productos listados tienen desempeño **TOP o ALTO**, lo que confirma que son referencias estratégicas para ventas.\n\n### Observación importante\nEl contexto permite identificar claramente el top 5 presentado, pero **",
+      "latency_ms": 3684.92,
+      "hallucination_score": 0.62,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta incluye una tabla plausible, pero hay problemas: afirma que el top 5 está ordenado por ranking/unidades, aunque el contexto solo muestra rankings individuales y no un listado completo comparativo. Además, la conclusión de que 'Lampara SUN 5 48W' lidera como línea comercial y que el top 5 está claramente identificado va más allá de lo explicitado. También hay una inconsistencia en el código de PINK/WHITE (ambos aparecen con LA-02), aunque eso sí está en el contexto.",
+      "quality_score": 0.92,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, útil y bien sintetizada. Presenta un top 5 ordenado con métricas relevantes y añade hallazgos ejecutivos. Como detalle, el cierre queda incompleto y hay una posible inconsistencia menor al usar el mismo código para dos variantes del producto, pero no afecta sustancialmente la utilidad.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 969,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuáles son las 3 categorías con mayor ingreso?",
+      "temperature": 0.0,
+      "answer": "Las **3 categorías con mayor ingreso** en el contexto proporcionado son:\n\n1. **Lamparas para uñas**  \n   - Ventas totales: **16,321,841.72 pesos**\n   - Ranking de categoría: **1**\n   - Es la categoría con mayor generación de ingresos del negocio.\n\n2. **Productos corporales**  \n   - Ventas totales: **4,298,241.30 pesos**\n   - Ranking de categoría: **6**\n\n3. **Eléctricos**  \n   - Ventas totales: **2,426,142.04 pesos**\n   - Ranking de categoría: **8**\n\n**Lectura ejecutiva:**  \n- **Lamparas para uñas** domina claramente el ingreso y concentra una parte muy relevante de las ventas.  \n- Hay una **brecha importante** entre la primera categoría y las siguientes, lo que sugiere alta dependencia de esa línea.  \n- **Productos corporales** y **Eléctricos** aparecen como categorías de soporte relevantes, con desempeño sólido pero muy por debajo del líder.\n\nSi quieres, también puedo darte el **top 3 por participación sobre ventas** o comparar estas categorías por **ticket promedio y unidades vendidas**.",
+      "latency_ms": 2456.86,
+      "hallucination_score": 0.62,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta identifica correctamente a Lamparas para uñas, Productos corporales y Eléctricos como las 3 categorías con mayor ingreso según las fuentes dadas. Sin embargo, añade conclusiones no soportadas claramente por el contexto, como que 'concentra una parte muy relevante de las ventas' y que existe una 'alta dependencia' de esa línea, además de describir a Productos corporales y Eléctricos como 'categorías de soporte relevantes'. Estas inferencias no aparecen explícitamente en el contexto.",
+      "quality_score": 0.96,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, relevante y ejecutiva. Identifica correctamente el top 3 por ingreso con base en el contexto y sintetiza bien la lectura de negocio. Solo podría mejorar indicando explícitamente que el ranking se infiere de las categorías disponibles en el contexto.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 919,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuáles son las 3 categorías con mayor ingreso?",
+      "temperature": 0.3,
+      "answer": "Las **3 categorías con mayor ingreso** en el contexto proporcionado son:\n\n1. **Lamparas para uñas** — **16,321,841.72 pesos**  \n   - Es la categoría con **mayor generación de ingresos** y ocupa el **ranking 1**.\n\n2. **Productos corporales** — **4,298,241.30 pesos**  \n   - Se ubica en el **ranking 6** y aporta un volumen relevante de ventas.\n\n3. **Eléctricos** — **2,426,142.04 pesos**  \n   - Ocupa el **ranking 8** y completa el top 3 por ingreso.\n\n**Lectura ejecutiva:**  \nLa categoría **Lamparas para uñas** domina claramente el negocio, con una distancia muy amplia frente a las demás. Después, **Productos corporales** y **Eléctricos** forman el segundo bloque de mayor aporte, aunque con ingresos bastante menores que el líder.",
+      "latency_ms": 2358.03,
+      "hallucination_score": 0.62,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta incluye una categoría no soportada por el contexto: 'Productos corporales' sí aparece, pero no hay evidencia de que sea la segunda con mayor ingreso. Además, omite 'Cosmetiqueras' y 'Productos para el hogar', que tienen ingresos mayores que 'Eléctricos' según los datos proporcionados. El top 3 correcto no está respaldado por el contexto.",
+      "quality_score": 0.93,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, ejecutiva y relevante; identifica correctamente el top 3 por ingreso con cifras y ranking. Solo podría mejorar indicando que el orden se basa en las fuentes disponibles del contexto anual.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 919,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuáles son las 3 categorías con mayor ingreso?",
+      "temperature": 0.7,
+      "answer": "Las **3 categorías con mayor ingreso** en el contexto proporcionado son:\n\n1. **Lamparas para uñas**  \n   - **Ventas totales:** 16,321,841.72 pesos  \n   - **Ranking de categoría:** 1  \n   - Es la categoría con **mayor generación de ingresos** del negocio.\n\n2. **Productos corporales**  \n   - **Ventas totales:** 4,298,241.30 pesos  \n   - **Ranking de categoría:** 6  \n\n3. **Eléctricos**  \n   - **Ventas totales:** 2,426,142.04 pesos  \n   - **Ranking de categoría:** 8  \n\n**Lectura ejecutiva:**  \n- Existe una **concentración fuerte de ingresos** en **Lamparas para uñas**, que supera ampliamente al resto.  \n- Las categorías **Productos corporales** y **Eléctricos** conforman el siguiente bloque de mayor aporte, aunque con una brecha importante frente al líder.  \n\nSi quieres, también puedo darte el **top 5** o calcular qué porcentaje representan estas 3 categorías sobre el total visible en el contexto.",
+      "latency_ms": 2150.75,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en las categorías y ventas totales presentes en el contexto. El top 3 indicado coincide con los mayores ingresos entre las categorías visibles. La lectura ejecutiva adicional es una inferencia razonable basada en esos datos.",
+      "quality_score": 0.97,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, ejecutiva y alineada al contexto. Identifica correctamente las 3 categorías con mayor ingreso según las fuentes disponibles y sintetiza bien la lectura de negocio. Solo podría mejorarse indicando explícitamente que el ranking se infiere de las categorías visibles en el contexto.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 919,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "Ranking de clientes por volumen de compra.",
+      "temperature": 0.0,
+      "answer": "Con base en el **monto total comprado**, el ranking de clientes queda así:\n\n1. **Isabel Abigail Hernandez Flores** — **$2,173,022.0**  \n   - Ranking comercial: **5**\n   - Nivel: **TOP**\n   - Es el cliente con mayor volumen de compra del grupo y además tiene alta frecuencia.\n\n2. **Yos Ruiz** — **$1,142,854.25**  \n   - Ranking comercial: **11**\n   - Nivel: **ALTO VALOR**\n   - Destaca por volumen alto y **muy alta frecuencia** de compra.\n\n3. **JUAN MANUEL González Hernández** — **$802,536.0**  \n   - Ranking comercial: **17**\n   - Nivel: **ALTO VALOR**\n   - Tiene buen volumen, aunque con frecuencia baja.\n\n4. **Mayra colin** — **$606,361.0**  \n   - Ranking comercial: **23**\n   - Nivel: **ALTO VALOR**\n\n5. **Guadalupe LOPEZ RODRÍGUEZ** — **$601,334.0**  \n   - Ranking comercial: **24**\n   - Nivel: **ALTO VALOR**\n   - Muy cercana a Mayra colin en volumen.\n\n6. **Hanny Juarez Sanchez** — **$561,181.0**  \n   - Ranking comercial: **28**\n   - Nivel: **ALTO VALOR**\n\n7. **Alondra Guadalupe Ernult Reyes** — **$357,868.3**  \n   - Ranking comercial: **41**\n   - Nivel: **ALTO VALOR**\n\n8. **jose luis llanes gomez** — **$329,962.0**  \n   - Ranking comercial: **47**\n   - Nivel: **ALTO VALOR**\n\n### Hallazgos clave\n- **Líder claro:** Isabel Abigail",
+      "latency_ms": 2677.26,
+      "hallucination_score": 0.97,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta ordena correctamente a los clientes según el monto total comprado usando solo datos presentes en el contexto. Las observaciones adicionales sobre frecuencia y liderazgo están soportadas por las fuentes. No se detectan datos inventados ni conclusiones no sustentadas.",
+      "quality_score": 0.96,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, relevante y bien sintetizada. Ordena correctamente a los clientes por monto total comprado y añade contexto ejecutivo útil (ranking comercial, nivel y observaciones). Solo queda algo incompleta al final, ya que el apartado de 'Hallazgos clave' se corta y no cierra del todo.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 968,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "Ranking de clientes por volumen de compra.",
+      "temperature": 0.3,
+      "answer": "Con base en el **monto total comprado**, el ranking de clientes recuperado queda así:\n\n### Ranking por volumen de compra\n1. **Isabel Abigail Hernandez Flores** — **$2,173,022.0**  \n2. **Yos Ruiz** — **$1,142,854.25**  \n3. **JUAN MANUEL González Hernández** — **$802,536.0**  \n4. **Mayra colin** — **$606,361.0**  \n5. **Guadalupe LOPEZ RODRÍGUEZ** — **$601,334.0**  \n6. **Hanny Juarez Sanchez** — **$561,181.0**  \n7. **Alondra Guadalupe Ernult Reyes** — **$357,868.3**  \n8. **jose luis llanes gomez** — **$329,962.0**\n\n### Hallazgos clave\n- **Isabel Abigail Hernandez Flores** lidera claramente el volumen de compra y además tiene el mayor peso en ventas entre los clientes listados (**4.78%**). Es el cliente más relevante del grupo.\n- **Yos Ruiz** ocupa el segundo lugar con un volumen alto y además destaca por su **muy alta frecuencia de compra** (**94 pedidos**), lo que sugiere recurrencia sólida.\n- **JUAN MANUEL González Hernández** está en tercer lugar por monto, aunque con **frecuencia baja**; su valor proviene más del ticket y volumen acumulado que de recurrencia.\n- **Mayra colin** y **Guadalupe LOPEZ RODRÍGUEZ** tienen volúmenes muy cercanos, por lo que compiten en un segmento similar de valor.\n- **jose luis llanes gomez** tiene el menor volumen entre los recuperados, aunque mantiene un **ticket promedio alto**, lo que indica compras",
+      "latency_ms": 3279.35,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta ordena correctamente a los clientes por monto total comprado usando solo datos del contexto. Las conclusiones sobre liderazgo, frecuencia y cercanía entre montos están soportadas por las fuentes. No se observan datos inventados.",
+      "quality_score": 0.96,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, relevante y bien sintetizada. Ordena correctamente a los clientes por monto total comprado y añade hallazgos ejecutivos útiles. Solo queda ligeramente incompleta porque la última observación queda truncada y no cierra del todo.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 968,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "Ranking de clientes por volumen de compra.",
+      "temperature": 0.7,
+      "answer": "Con base en el contexto disponible, este es el **ranking de clientes por volumen de compra** entre los clientes recuperados:\n\n### Ranking por monto total comprado\n1. **Isabel Abigail Hernandez Flores** — **$2,173,022.0**  \n   - Ranking comercial: **5**\n   - Participación en ventas: **4.78%**\n   - Perfil destacado: **TOP**\n   - Es el cliente con mayor volumen de compra y la mayor contribución a ventas del grupo.\n\n2. **Yos Ruiz** — **$1,142,854.25**  \n   - Ranking comercial: **11**\n   - Participación en ventas: **2.52%**\n   - Frecuencia: **MUY FRECUENTE**\n   - Tiene alto volumen con una recurrencia sobresaliente.\n\n3. **JUAN MANUEL González Hernández** — **$802,536.0**  \n   - Ranking comercial: **17**\n   - Participación en ventas: **1.77%**\n   - Frecuencia: **BAJO**\n   - Alto valor, pero con menor frecuencia de compra.\n\n4. **Mayra colin** — **$606,361.0**  \n   - Ranking comercial: **23**\n   - Participación en ventas: **1.33%**\n   - Frecuencia: **BAJO**\n\n5. **Guadalupe LOPEZ RODRÍGUEZ** — **$601,334.0**  \n   - Ranking comercial: **24**\n   - Participación en ventas: **1.32%**\n   - Frecuencia: **BAJO**\n   - Muy cercana a Mayra colin en volumen.\n\n6. **Hanny Juarez Sanchez** — **$561,181.0**  \n   - Ranking comercial: **28**\n   - Participación en ventas: **1.24%**\n   - Frecuencia: **BAJO**\n\n7.",
+      "latency_ms": 3457.72,
+      "hallucination_score": 0.99,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta ordena correctamente a los clientes por monto total comprado usando únicamente los datos del contexto. No introduce información externa ni conclusiones no soportadas.",
+      "quality_score": 0.96,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, útil y directamente alineada con el contexto. Ordena correctamente a los clientes por monto comprado y añade datos ejecutivos relevantes. Solo queda incompleta al terminar en el puesto 7 sin cerrar el ranking total de los 8 clientes.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 968,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "Top estados por ventas.",
+      "temperature": 0.0,
+      "answer": "Con base en el contexto disponible, los **top estados por ventas** son:\n\n1. **Sonora** — **$2,483,633.0**  \n   - Participación en ventas: **2.73%**\n   - Ranking estatal: **10**\n   - Nivel comercial: **Zona importante**\n\n2. **Quintana Roo** — **$2,295,983.5**  \n   - Participación en ventas: **2.52%**\n   - Ranking estatal: **12**\n   - Nivel comercial: **Zona secundaria**\n\n3. **Guanajuato** — **$1,580,653.5**  \n   - Participación en ventas: **1.74%**\n   - Ranking estatal: **18**\n   - Nivel comercial: **Zona secundaria**\n\n4. **Guerrero** — **$1,134,337.8**  \n   - Participación en ventas: **1.25%**\n   - Ranking estatal: **20**\n   - Nivel comercial: **Zona secundaria**\n\n5. **Morelos** — **$628,680.7**  \n   - Participación en ventas: **0.69%**\n   - Ranking estatal: **26**\n   - Nivel comercial: **Zona secundaria**\n\n### Hallazgos clave\n- **Sonora lidera** el grupo en ventas y también tiene el mejor posicionamiento comercial entre los estados listados.\n- **Quintana Roo** está muy cerca de Sonora en ventas, lo que sugiere una competencia fuerte por el liderazgo dentro de este grupo.\n- Hay una **caída importante** después de los dos primeros lugares: Guanajuato queda bastante por debajo de Sonora y Quintana Roo.\n- Todos los estados mostrados tienen **baja concentración**, lo que indica una base comercial dispersa y con **potencial de crecimiento**.\n- En términos de prioridad comercial, **Sonora y Quintana Roo** parecen",
+      "latency_ms": 3890.46,
+      "hallucination_score": 0.72,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta incluye estados y cifras que sí aparecen en el contexto, pero también añade conclusiones no soportadas claramente, como que Quintana Roo está 'muy cerca' de Sonora y que Sonora tiene el 'mejor posicionamiento comercial' entre los estados listados. Además, la respuesta queda incompleta al final.",
+      "quality_score": 0.96,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, relevante y bien sintetizada. Ordena correctamente los estados por ventas usando el contexto disponible y añade hallazgos ejecutivos útiles. Solo queda algo incompleta la última idea, pero no afecta sustancialmente la calidad.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1037,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "Top estados por ventas.",
+      "temperature": 0.3,
+      "answer": "Con base en el contexto disponible, los **top estados por ventas** son:\n\n1. **Sonora** — **$2,483,633.0**  \n   - Participación en ventas: **2.73%**\n   - Ranking estatal: **10**\n   - Nivel comercial: **Zona importante**\n\n2. **Quintana Roo** — **$2,295,983.5**  \n   - Participación en ventas: **2.52%**\n   - Ranking estatal: **12**\n   - Nivel comercial: **Zona secundaria**\n\n3. **Guanajuato** — **$1,580,653.5**  \n   - Participación en ventas: **1.74%**\n   - Ranking estatal: **18**\n   - Nivel comercial: **Zona secundaria**\n\n4. **Guerrero** — **$1,134,337.8**  \n   - Participación en ventas: **1.25%**\n   - Ranking estatal: **20**\n   - Nivel comercial: **Zona secundaria**\n\n5. **Morelos** — **$628,680.7**  \n   - Participación en ventas: **0.69%**\n   - Ranking estatal: **26**\n   - Nivel comercial: **Zona secundaria**\n\n### Hallazgos clave\n- **Sonora lidera claramente** en ventas entre los estados disponibles.\n- **Quintana Roo** está muy cerca de Sonora, con una diferencia relativamente moderada.\n- Hay una **caída importante** después del top 2; Guanajuato ya se ubica bastante por debajo.\n- Todos los estados mostrados tienen **baja concentración**, lo que sugiere una base comercial dispersa y con **potencial de crecimiento**.\n- En términos de prioridad comercial, **Sonora y Quintana Roo** son los estados más relevantes por volumen.\n\nSi quieres, también puedo darte el **ranking completo ordenado de mayor a menor**",
+      "latency_ms": 2941.09,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta ordena correctamente los estados por ventas usando solo los datos del contexto. No introduce estados ni cifras no presentes. La única posible imprecisión es la frase 'muy cerca' entre Sonora y Quintana Roo, que es interpretativa, pero no contradice el contexto.",
+      "quality_score": 0.98,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, ejecutiva y totalmente alineada con el contexto. Ordena correctamente los estados por ventas, incluye métricas relevantes y sintetiza hallazgos útiles. Solo podría mejorarse indicando explícitamente que el ranking se limita a los estados disponibles en la fuente.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1037,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "Top estados por ventas.",
+      "temperature": 0.7,
+      "answer": "Con el contexto disponible, el **top estados por ventas** es:\n\n1. **Sonora** — **$2,483,633.0**\n2. **Quintana Roo** — **$2,295,983.5**\n3. **Guanajuato** — **$1,580,653.5**\n4. **Guerrero** — **$1,134,337.8**\n5. **Morelos** — **$628,680.7**\n\n### Hallazgos clave\n- **Sonora lidera** tanto en ventas como en ranking interno del grupo (ranking 10) y aporta **2.73%** de participación.\n- **Quintana Roo** muestra un desempeño muy sólido y además tiene el **ticket promedio más alto** del grupo: **$14,260.77**, lo que sugiere mayor valor por pedido.\n- **Guanajuato** ocupa el tercer lugar en ventas, aunque con un ticket promedio más bajo que Sonora y Quintana Roo.\n- **Guerrero** y **Morelos** quedan en una segunda capa de contribución, con ventas bastante por debajo de los líderes.\n- Todos los estados mostrados tienen **baja concentración**, lo que indica oportunidad de crecimiento, pero también dependencia dispersa de clientes.\n\n### Lectura ejecutiva\n- El volumen de ventas está **concentrado en pocos estados**, especialmente en **Sonora y Quintana Roo**.\n- **Quintana Roo** destaca por eficiencia de valor por pedido; **Sonora** por volumen total.\n- Los estados con menor venta, como **Tabasco, Baja California Sur y Nayarit**, están claramente rezagados y representan prioridad de desarrollo si se busca ampliar cobertura.\n\nSi quieres, también puedo darte el **ranking completo de mayor a menor** con participación y ticket promedio.",
+      "latency_ms": 3174.67,
+      "hallucination_score": 0.42,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta incluye estados no presentes en el contexto como si fueran parte del top general y además afirma un ranking completo sin base suficiente. También menciona Tabasco, Baja California Sur y Nayarit como rezagados dentro del ranking, pero esos datos no se derivan del conjunto mostrado para ordenar todos los estados. Hay inferencias razonables, pero varias conclusiones exceden claramente el contexto.",
+      "quality_score": 0.97,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, relevante y ejecutiva; ordena correctamente los estados por ventas y añade hallazgos útiles. Solo incluye una pequeña inconsistencia al mencionar estados rezagados no listados en el top solicitado, aunque sí están en el contexto.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1037,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "Analiza el desempeño general del negocio.",
+      "temperature": 0.0,
+      "answer": "El desempeño general del negocio muestra una **alta concentración en pocos mercados y categorías clave**, con un liderazgo claro de **Ciudad de México** y de la categoría **Utensilios y Herramientas**.\n\n### 1) Visión general del negocio\n- El negocio tiene un **principal motor comercial en Ciudad de México**, que aporta **22.7% de las ventas totales** y ocupa el **ranking 1** entre los estados.\n- En categorías, **Utensilios y Herramientas** es el componente más fuerte del portafolio, con **9.21% de participación en ventas** y nivel **ESTRELLA**.\n- También destacan **Productos corporales** y **Productos para el hogar** como categorías de desempeño sólido, aunque con menor peso relativo.\n\n### 2) Principales fortalezas\n**Ciudad de México**\n- Es la **zona clave** del negocio.\n- Registra **20.64 millones de pesos** en ventas, **1,670 pedidos** y **217 clientes activos**.\n- Su observación confirma que es el **principal mercado del negocio**.\n- La **concentración media** sugiere una base relevante, aunque con dependencia importante de este estado.\n\n**Utensilios y Herramientas**\n- Es la categoría más estratégica del portafolio analizado.\n- Tiene el mayor volumen entre las categorías mostradas: **216,479 unidades** y **8.36 millones de pesos** en ventas.\n- Su nivel **ESTRELLA** indica que es parte del **núcleo principal del negocio**.\n\n**Productos corporales**\n- Aporta **4.30 millones de pesos** y **4.74%** de participación.\n- Tiene nivel **ALTA**, lo que sugiere un desempeño comercial sólido y consistente.\n\n**Productos para el hogar**\n- Aunque su participación es menor (**2.62%**), mantiene un desempeño **ALTA** y volumen relevante de",
+      "latency_ms": 4361.78,
+      "hallucination_score": 0.97,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los datos del contexto: destaca Ciudad de México como principal mercado, Utensilios y Herramientas como categoría estrella, y menciona correctamente el buen desempeño de Productos corporales y Productos para el hogar. No introduce información ajena ni conclusiones claramente no soportadas.",
+      "quality_score": 0.92,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, ejecutiva y muy relevante: sintetiza bien el peso de Ciudad de México y de Utensilios y Herramientas, además de mencionar categorías sólidas y zonas secundarias. Como detalle menor, queda algo incompleta al final y podría integrar una conclusión más explícita sobre riesgos y oportunidades.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 989,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "Analiza el desempeño general del negocio.",
+      "temperature": 0.3,
+      "answer": "El desempeño general del negocio muestra una **alta concentración en pocos mercados y categorías clave**, con un liderazgo claro de **Ciudad de México** y de la categoría **Utensilios y Herramientas**.\n\n### 1) Visión general del negocio\n- El negocio tiene un **mercado principal muy dominante** en Ciudad de México, que aporta **22.7% de las ventas totales** y ocupa el **ranking 1**.\n- A nivel de estados, **Jalisco** también es relevante, aunque con una participación bastante menor (**6.87%**).\n- Los estados de **Morelos** y **Guerrero** tienen participación baja, por lo que hoy representan más una **oportunidad de expansión** que un motor actual de ingresos.\n\n### 2) Principales fortalezas\n**Ciudad de México**\n- Es la **zona clave** del negocio.\n- Registra **20.64 millones de pesos** en ventas, con **217 clientes activos** y **1,670 pedidos**.\n- Tiene un **ticket promedio de 12,361.87 pesos**, lo que indica una base comercial sólida y de alto valor.\n- La observación confirma que es el **principal mercado del negocio**.\n\n**Utensilios y Herramientas**\n- Es la categoría más fuerte del portafolio entre las mostradas.\n- Genera **8.36 millones de pesos**, con **216,479 unidades vendidas**.\n- Tiene **9.21% de participación** y ocupa el **ranking 3**.\n- Está clasificada como **ESTRELLA**, lo que la posiciona como parte del **núcleo principal del negocio**.\n\n**Otras categorías sólidas**\n- **Productos corporales**: **4.30 millones de pesos**, **4.74% de participación**, nivel **ALTA**.\n- **Productos para el hogar**: **2.37 millones de pesos**, **2.62",
+      "latency_ms": 3279.96,
+      "hallucination_score": 0.97,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se mantiene alineada con el contexto: resume correctamente el liderazgo de Ciudad de México, la relevancia de Jalisco y el menor peso de Morelos y Guerrero. También describe fielmente las categorías Utensilios y Herramientas, Productos corporales y Productos para el hogar con sus cifras y niveles. No introduce datos inventados ni conclusiones claramente no soportadas.",
+      "quality_score": 0.94,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, ejecutiva y muy relevante: sintetiza bien el desempeño general, destaca los mercados y categorías clave, y usa correctamente los datos del contexto. Como detalle menor, queda ligeramente incompleta al final y podría cerrar con una conclusión más explícita sobre riesgos u अवसरidades.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 989,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "Analiza el desempeño general del negocio.",
+      "temperature": 0.7,
+      "answer": "El desempeño general del negocio muestra una estructura claramente concentrada en pocos mercados y categorías clave, con una base comercial sólida pero con oportunidades de diversificación y crecimiento en zonas secundarias.\n\n## Lectura ejecutiva general\n- **Ciudad de México es el principal motor del negocio**: aporta **22.7% de las ventas totales**, con **20.64 millones de pesos**, **217 clientes activos** y **1,670 pedidos**. Además, tiene el **ranking 1** y está clasificada como **ZONA CLAVE**. Esto confirma una fuerte dependencia del mercado capitalino.\n- **Jalisco también es un mercado relevante**, aunque muy por debajo de Ciudad de México: genera **6.25 millones de pesos** y representa **6.87%** de las ventas. Tiene **baja concentración**, lo que sugiere una cartera más distribuida y menor dependencia de pocos clientes.\n- **Morelos y Guerrero tienen participación baja** en el negocio, con **0.69%** y **1.25%** de las ventas respectivamente. Ambos aparecen como **ZONAS SECUNDARIAS**, con potencial de crecimiento, pero hoy su impacto es limitado.\n\n## Desempeño por categorías\n- La categoría más fuerte dentro del contexto es **Utensilios y Herramientas**:\n  - **8.36 millones de pesos**\n  - **9.21% de participación**\n  - **Ranking 3**\n  - Clasificación **ESTRELLA**\n  - Es parte del **núcleo principal del negocio**\n  \n  Esto indica que es una categoría estratégica tanto por volumen como por relevancia comercial.\n\n- Otras categorías con buen desempeño:\n  - **Productos corporales**: **4.30 millones de pesos**, **4.74%** de participación, ranking **6**, nivel **ALTA**.\n  - **Productos para el hogar**: **2.37 millones de pesos**, **2",
+      "latency_ms": 4299.87,
+      "hallucination_score": 0.97,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los datos del contexto: destaca Ciudad de México como principal mercado, Jalisco como relevante, y Morelos/Guerrero como zonas secundarias con baja participación. También resume correctamente el desempeño de categorías como Utensilios y Herramientas, Productos corporales y Productos para el hogar. No introduce información claramente ajena al contexto; solo queda truncada al final.",
+      "quality_score": 0.93,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, ejecutiva y bien alineada al contexto. Sintetiza correctamente la concentración en Ciudad de México y el peso de Jalisco, además de distinguir categorías clave y secundarias. Como mejora menor, podría cerrar con una conclusión más explícita sobre riesgos y prioridades de acción.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 989,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué tendencias observas en las ventas?",
+      "temperature": 0.0,
+      "answer": "Sí. Con base en los meses disponibles, se observan estas tendencias principales en ventas:\n\n### 1) Fuerte volatilidad mes a mes\nLas ventas no muestran una trayectoria estable; alternan entre crecimientos y caídas marcadas. Esto sugiere un comportamiento irregular, con cambios relevantes entre periodos.\n\n### 2) Pico de crecimiento en julio y octubre\n- **2025-07**: crecimiento fuerte de **23.53%**, con **8.91 M** en ventas y **778 pedidos**.\n- **2025-10**: crecimiento fuerte de **18.04%**, con **8.46 M** en ventas y **713 pedidos**.\n\nEstos meses destacan como los mejores del periodo observado en términos de impulso comercial.\n\n### 3) Caídas fuertes después de algunos repuntes\nDespués de los meses de crecimiento, aparecen retrocesos importantes:\n- **2025-08**: caída fuerte de **-18.43%**\n- **2026-01**: caída fuerte de **-16.66%**\n- **2026-02**: caída fuerte de **-32.78%**\n- **2026-03**: caída fuerte de **-12.01%**\n\nLa caída de **2026-02** es la más severa del conjunto y representa una alerta clara por impacto en ingresos.\n\n### 4) Tendencia descendente hacia el cierre del periodo\nAunque hubo recuperación en **2025-10** y **2025-11**, luego se observa una secuencia de deterioro:\n- **2025-11** aún crece moderadamente (**+3.49%**)\n- **2026-01** cae fuerte\n- **2026-02** cae aún más\n- **2026-03** continúa la caída\n\nEsto indica una pérdida de dinamismo comercial en los últimos meses analizados.\n\n### 5) Los pedidos también caen",
+      "latency_ms": 3479.53,
+      "hallucination_score": 0.97,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los datos del contexto y no introduce información externa. Las tendencias descritas (volatilidad, picos en julio y octubre, caídas fuertes posteriores y deterioro al cierre) están respaldadas por las variaciones mensuales y los valores de ventas/pedidos mostrados.",
+      "quality_score": 0.97,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, relevante y bien sintetizada. Resume correctamente la volatilidad, los picos de crecimiento y la caída posterior, alineándose con el contexto. Solo queda incompleta al final ('Los pedidos también caen'), pero no afecta sustancialmente la utilidad ejecutiva.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 839,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué tendencias observas en las ventas?",
+      "temperature": 0.3,
+      "answer": "Sí. Con base en los periodos disponibles, se observan estas tendencias principales en ventas:\n\n### 1) Alta volatilidad mes a mes\nLas ventas no siguen una trayectoria estable; alternan entre crecimientos fuertes y caídas fuertes. Esto sugiere un comportamiento irregular, con meses de aceleración y otros de corrección marcada.\n\n### 2) Fuerte crecimiento en julio y octubre 2025\n- **2025-07**: crecimiento fuerte de **23.53%** vs. mes anterior, con **8.91 M** en ventas.\n- **2025-10**: crecimiento fuerte de **18.04%**, con **8.46 M** en ventas.\n\nEstos meses muestran capacidad de recuperación y picos de desempeño relevantes.\n\n### 3) Caídas consecutivas hacia el cierre e inicio de 2026\nSe observa una secuencia de deterioro:\n- **2025-08**: caída fuerte de **-18.43%**\n- **2025-09**: caída moderada de **-1.29%**\n- **2026-01**: caída fuerte de **-16.66%**\n- **2026-02**: caída fuerte de **-32.78%**\n- **2026-03**: caída fuerte de **-12.01%**\n\nLa señal más preocupante es la **tendencia descendente sostenida entre enero y marzo de 2026**, especialmente febrero, que presenta la mayor contracción del periodo analizado.\n\n### 4) El ticket promedio también se debilita en los meses de caída\nAunque el ticket promedio se mantiene relativamente estable en varios meses de 2025, en 2026 se aprecia una baja:\n- **2026-01**: **11,990.73**\n- **2026-02**: **10,625.19**\n- **2026-03**: **10,969",
+      "latency_ms": 3396.76,
+      "hallucination_score": 0.93,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los datos del contexto y describe correctamente la volatilidad, los crecimientos de 2025-07 y 2025-10, y las caídas de 2025-08, 2025-09, 2026-01, 2026-02 y 2026-03. La única observación es que la última línea queda truncada, pero no introduce información no soportada.",
+      "quality_score": 0.92,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, relevante y ejecutiva; sintetiza bien la volatilidad, los picos de crecimiento y la caída sostenida. Solo queda incompleta la última línea del ticket promedio y podría cerrar con una conclusión más directa.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 839,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué tendencias observas en las ventas?",
+      "temperature": 0.7,
+      "answer": "Sí se observan varias tendencias claras en las ventas:\n\n### 1) Pico de crecimiento en julio y recuperación en octubre-noviembre\n- **2025-07** fue el mejor mes del periodo mostrado, con **crecimiento fuerte (+23.53%)** y ventas por **$8.9M**.\n- Después vino una **caída en agosto (-18.43%)** y una ligera baja en **septiembre (-1.29%)**.\n- Luego hubo una **recuperación importante en octubre (+18.04%)** y un crecimiento más moderado en **noviembre (+3.49%)**.\n\n### 2) Deterioro fuerte al inicio de 2026\n- **2026-01** volvió a mostrar una **caída fuerte (-16.66%)**.\n- La situación empeoró en **2026-02 (-32.78%)**, que es la **mayor caída observada** en el contexto.\n- En **2026-03** la tendencia siguió a la baja (**-12.01%**), confirmando un tramo de debilidad sostenida.\n\n### 3) El volumen de pedidos cae junto con las ventas\n- En los meses de mejor desempeño hubo más pedidos: por ejemplo, **julio (778)** y **octubre/noviembre (~700)**.\n- En los meses más débiles, los pedidos bajan con fuerza: **febrero (528)** y **marzo (450)**.\n- Esto sugiere que la caída de ventas no parece explicarse solo por ticket, sino también por **menor cantidad de pedidos**.\n\n### 4) El ticket promedio también muestra presión a la baja en 2026\n- El ticket promedio se mantuvo relativamente estable entre **julio y enero** alrededor de **$11.4K a $12.5K**.\n- Pero en **febrero y marzo** cae a **",
+      "latency_ms": 3586.75,
+      "hallucination_score": 0.78,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta se basa en el contexto, pero añade una conclusión no soportada claramente: que la caída de ventas 'no parece explicarse solo por ticket, sino también por menor cantidad de pedidos'. Aunque los pedidos bajan, el contexto no permite afirmar causalidad ni esa interpretación analítica con certeza. Además, la respuesta queda incompleta al final.",
+      "quality_score": 0.97,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, relevante y bien sintetizada. Identifica correctamente los picos, caídas, evolución temporal, relación entre pedidos y ventas, y la presión sobre el ticket promedio. Solo queda incompleta la última viñeta, pero no afecta sustancialmente la utilidad ejecutiva.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 839,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cómo se comportan los clientes top?",
+      "temperature": 0.0,
+      "answer": "Los clientes **TOP** muestran un comportamiento claramente orientado a **alto valor y recurrencia**, aunque con matices importantes entre ellos:\n\n### Patrón general\n- **Compran de forma frecuente o muy frecuente**: la mayoría aparece con frecuencia **FRECUENTE** o **MUY FRECUENTE**.\n- **Concentran una parte relevante de las ventas**: sus participaciones individuales van desde **2.68% hasta 9.42%**.\n- **Tienen tickets promedio altos**, aunque no siempre el más alto coincide con el mayor volumen de compras.\n- **Son clientes estratégicos**: todos los perfiles TOP se describen como importantes para el negocio.\n\n### Líderes destacados\n1. **Nova Beauty**\n   - Es el **principal generador de ingresos**.\n   - Tiene el **mayor monto comprado**: **$4,277,704.38**\n   - También lidera en **participación en ventas**: **9.42%**\n   - Presenta **82 pedidos** y frecuencia **MUY FRECUENTE**\n   - Ticket promedio: **$52,167.13**\n\n2. **Carlos Chacin**\n   - Muy relevante por combinación de **volumen y recurrencia**\n   - **81 pedidos**, frecuencia **MUY FRECUENTE**\n   - Monto comprado: **$3,215,689.16**\n   - Participación: **7.08%**\n   - Ticket promedio: **$39,699.87**\n\n3. **YIFA ..........**\n   - Destaca por **máxima recurrencia** entre los perfiles mostrados: **101 pedidos**\n   - Monto comprado: **$2,715,315.69**\n   - Participación: **5.98%**\n   - Ticket promedio: **$26,884.31**\n   - Su patrón sugiere **muchas compras de menor valor relativo** frente a otros TOP",
+      "latency_ms": 3889.58,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los perfiles del contexto y resume correctamente que los clientes TOP compran con frecuencia o muy frecuencia, concentran ventas relevantes y tienen tickets altos. No introduce datos ajenos. Solo hace una inferencia general razonable al decir que el patrón sugiere compras de menor valor relativo en YIFA, lo cual está respaldado por sus métricas.",
+      "quality_score": 0.97,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, relevante y bien sintetizada. Resume correctamente el comportamiento de los clientes TOP con patrones generales y ejemplos concretos. Solo podría mejorar incorporando también a STEVEN WU, BLACK PIG STORE, HECTOR RAMIREZ MARQUEZ e Isabel Abigail Hernandez Flores para una visión más completa del grupo.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 971,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cómo se comportan los clientes top?",
+      "temperature": 0.3,
+      "answer": "Los clientes **TOP** muestran un comportamiento claramente orientado a **alto valor comercial y recurrencia**, aunque con diferencias importantes entre ellos:\n\n### Patrón general\n- Todos los clientes TOP concentran una **participación relevante en ventas**, entre **2.68% y 9.42%** por cliente.\n- Presentan **frecuencia de compra alta o media-alta**: predominan los perfiles **FRECUENTE** y **MUY FRECUENTE**.\n- En general, combinan **volumen de pedidos** con **ticket promedio elevado**, aunque no siempre ambos al mismo tiempo.\n\n### Clientes TOP más destacados\n- **Nova Beauty** es el principal generador de ingresos:\n  - **82 pedidos**\n  - **$4,277,704.38** en compras\n  - **9.42%** de participación en ventas\n  - **Ticket promedio: $52,167.13**\n  - **MUY FRECUENTE**\n- **Carlos Chacin** también destaca por equilibrio entre volumen y valor:\n  - **81 pedidos**\n  - **$3,215,689.16**\n  - **7.08%** de participación\n  - **MUY FRECUENTE**\n- **YIFA** combina alta recurrencia con buen aporte:\n  - **101 pedidos**, el mayor volumen entre los TOP\n  - **$2,715,315.69**\n  - **5.98%** de participación\n  - **MUY FRECUENTE**\n\n### Comportamientos relevantes\n- Hay dos perfiles dentro de los TOP:\n  1. **Clientes de alta recurrencia y alto volumen**: como Nova Beauty, Carlos Chacin y YIFA.\n  2. **Clientes de menor frecuencia pero ticket alto**: como HECTOR RAMIREZ MARQUEZ, con solo **16 pedidos** pero un ticket promedio de **$75,976.31**.\n- **ST",
+      "latency_ms": 3173.88,
+      "hallucination_score": 0.97,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los perfiles del contexto y resume correctamente que los clientes TOP tienen alta participación en ventas, frecuencia frecuente o muy frecuente, y combinan volumen de pedidos con ticket promedio elevado. No introduce datos ajenos; solo queda truncada al final.",
+      "quality_score": 0.94,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, relevante y bien sintetizada. Resume el patrón general de los clientes TOP con datos concretos y distingue subsegmentos útiles para negocio. Solo queda incompleta al final ('ST'), pero el contenido principal responde adecuadamente a la pregunta y al contexto.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 971,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cómo se comportan los clientes top?",
+      "temperature": 0.7,
+      "answer": "Los clientes **TOP** se comportan como una base de alto valor, pero con **patrones de compra distintos** entre sí. En conjunto, destacan por:\n\n### 1) Generan una parte relevante de las ventas\nEntre los clientes TOP listados, la participación en ventas va desde **2.68% hasta 9.42%** por cliente, lo que confirma que concentran una porción importante del ingreso.\n\n### 2) No todos compran con la misma frecuencia\nHay dos comportamientos claros:\n- **Muy frecuentes**:  \n  - Nova Beauty  \n  - Carlos Chacin  \n  - YIFA ..........  \n- **Frecuentes**:  \n  - BLACK PIG STORE  \n  - STEVEN WU  \n  - Isabel Abigail Hernandez Flores  \n- **Ocasional**:  \n  - HECTOR RAMIREZ MARQUEZ  \n\nEsto sugiere que el valor TOP no depende solo de comprar muchas veces, sino también del **monto por pedido**.\n\n### 3) El ticket promedio varía bastante\nLos tickets promedio van desde **18,008.93** hasta **75,976.31 pesos** en los clientes TOP mostrados.  \nEso indica dos perfiles dentro del segmento:\n- Clientes de **alta recurrencia y ticket medio**  \n- Clientes de **menor frecuencia pero ticket alto**\n\n### 4) Los líderes del grupo combinan volumen y valor\nLos más destacados por impacto comercial son:\n- **Nova Beauty**: principal generador de ingresos, con **4,277,704.38 pesos**, **82 pedidos** y **9.42%** de participación.\n- **Carlos Chacin**: **3,215,689.16 pesos**, **81 pedidos**, **7.08%** de participación.\n- **YIFA ..........**: **2,715,315.69 pesos**, **101 pedidos**, **5.98%** de participación.\n\nEstos",
+      "latency_ms": 3379.77,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los datos del contexto: identifica clientes TOP, rangos de participación en ventas, frecuencias de compra y tickets promedio. Las conclusiones sobre patrones distintos, alta recurrencia vs. ticket alto y los clientes más destacados están respaldadas por las fuentes. No se observan datos inventados.",
+      "quality_score": 0.93,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, relevante y bien sintetizada. Usa correctamente el contexto para describir patrones de frecuencia, ticket promedio y aporte a ventas de los clientes TOP. Como mejora menor, podría cerrar la idea final y mencionar explícitamente que el segmento TOP combina recurrencia con alto valor por pedido.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 971,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué patrones ves en los productos más vendidos?",
+      "temperature": 0.0,
+      "answer": "Sí. Con el contexto disponible, se observan estos patrones en los productos más vendidos:\n\n### 1) Los productos líderes combinan volumen alto con aporte relevante a ventas\n- **Maniquí para pestañas - cabeza** destaca como producto **TOP**:\n  - **9,741 unidades vendidas**\n  - **524,751.91 pesos** en ventas\n  - **4.69%** de participación sobre ventas totales\n  - **Ranking 9**\n- **Lámpara de escritorio Pixar 2 en 1 - Light Pink** también tiene buen desempeño:\n  - **2,190 unidades vendidas**\n  - **391,367.09 pesos**\n  - **3.5%** de participación\n  - **Ranking 19**\n  - Nivel **ALTO**\n\n**Patrón:** los productos más vendidos no solo mueven unidades, sino que también aportan una porción importante del ingreso total.\n\n### 2) Hay una diferencia clara entre “alto desempeño” y “top ventas”\n- La **lámpara** tiene nivel **ALTO**, pero no entra en el grupo más dominante.\n- El **maniquí** sí aparece como **TOP**, con mayor volumen y mejor posición relativa.\n\n**Interpretación:** no todos los productos con buen desempeño alcanzan el mismo peso comercial; los líderes verdaderos combinan escala y relevancia en ventas.\n\n### 3) Los productos más vendidos pertenecen a categorías distintas, lo que sugiere diversificación\n- **Lámparas de escritorio**\n- **Utensilios y Herramientas**\n\n**Patrón:** el negocio no depende de una sola categoría para sostener sus productos estrella. Eso reduce concentración de riesgo y muestra demanda distribuida.\n\n### 4) El ticket por unidad es relativamente bajo en categorías de alto volumen\nEn categorías con buen desempeño:\n- **Productos corporales:** 102,376 unidades, ticket promedio **41.",
+      "latency_ms": 3370.61,
+      "hallucination_score": 0.62,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta introduce conclusiones no soportadas por el contexto, como que los productos más vendidos 'no solo mueven unidades, sino que también aportan una porción importante del ingreso total' y que existe una 'diversificación' que reduce riesgo. Además, la sección sobre ticket por unidad queda incompleta y mezcla categorías con productos sin una base clara para afirmar patrones generales de los más vendidos.",
+      "quality_score": 0.86,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, relevante y útil: identifica patrones de volumen, aporte a ventas, diferencia entre alto y top desempeño y diversificación por categoría. Sin embargo, se corta al final y no completa el análisis con todos los datos disponibles, por lo que pierde algo de síntesis y cierre ejecutivo.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 935,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué patrones ves en los productos más vendidos?",
+      "temperature": 0.3,
+      "answer": "Sí. Con el contexto disponible se observan estos patrones en los productos más vendidos:\n\n### 1) Los líderes combinan volumen alto con buen aporte a ventas\n- **Maniquí para pestañas - cabeza** destaca como producto **TOP**:\n  - 9,741 unidades vendidas\n  - 524,751.91 pesos en ventas\n  - 4.69% de participación\n  - Ranking 9\n- **Lámpara de escritorio Pixar 2 en 1 - Light Pink** también tiene buen desempeño:\n  - 2,190 unidades\n  - 391,367.09 pesos\n  - 3.5% de participación\n  - Ranking 19\n  - Nivel **ALTO**\n\n**Patrón:** los productos más vendidos no solo mueven unidades, sino que también aportan una porción relevante del ingreso total.\n\n### 2) Hay productos de alta rotación con ticket unitario relativamente bajo\n- En categorías de alto desempeño:\n  - **Productos corporales**: 102,376 unidades, ticket promedio de 41.98 pesos\n  - **Productos para el hogar**: 52,438 unidades, ticket promedio de 45.25 pesos\n\n**Patrón:** los productos más vendidos parecen concentrarse en artículos de consumo frecuente o de compra accesible, donde el volumen compensa tickets unitarios moderados.\n\n### 3) El desempeño está concentrado en pocas referencias fuertes\n- El **Maniquí para pestañas - cabeza** aparece con nivel **TOP**, mientras que la lámpara está en nivel **ALTO**.\n- Esto sugiere que una parte importante del resultado comercial depende de unos pocos productos estrella.\n\n**Implicación de negocio:** conviene proteger disponibilidad e inventario de estos productos, porque cualquier quiebre impactaría ventas de forma visible.\n\n### 4) Los productos más vendidos se alinean con categorías sólidas\n-",
+      "latency_ms": 3993.05,
+      "hallucination_score": 0.72,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta incluye inferencias no sustentadas por el contexto, como que los productos más vendidos son de 'consumo frecuente o compra accesible' y que 'conviene proteger disponibilidad e inventario' por impacto visible. También afirma que el desempeño está concentrado en pocas referencias fuertes, lo cual es plausible pero no está demostrado claramente por los datos dados. Además, la respuesta queda incompleta al cortar la última sección.",
+      "quality_score": 0.86,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara y útil, identifica patrones relevantes y los conecta con datos del contexto. Como mejora, mezcla categorías con productos y no termina de responder con precisión qué patrones hay específicamente en los productos más vendidos; además, la última sección queda incompleta.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 935,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué patrones ves en los productos más vendidos?",
+      "temperature": 0.7,
+      "answer": "Sí. Con el contexto disponible, se observan estos patrones en los productos más vendidos:\n\n### 1) Los productos líderes concentran volumen relevante, pero no necesariamente el mayor valor individual\n- **Maniquí para pestañas - cabeza** es el más destacado entre los productos mostrados:\n  - **9,741 unidades**\n  - **524,751.91 pesos**\n  - **4.69% de participación**\n  - **Ranking 9**\n  - Esto sugiere un producto de **alto volumen** con impacto comercial fuerte.\n- **Lámpara de escritorio Pixar 2 en 1 - Light Pink** vende menos unidades:\n  - **2,190 unidades**\n  - **391,367.09 pesos**\n  - **3.5% de participación**\n  - **Ranking 19**\n  - Aun así, mantiene un desempeño **ALTO**, lo que indica que no siempre el mayor volumen es el único criterio de éxito.\n\n### 2) Los productos más vendidos pertenecen a categorías con desempeño sólido\n- **Utensilios y Herramientas** aparece con el producto mejor posicionado.\n- **Lámparas de escritorio** también muestra buen rendimiento.\n- A nivel categoría, las que tienen datos disponibles muestran desempeño **ALTA**:\n  - **Productos corporales**: 102,376 unidades, 4.74% de participación, ranking 6.\n  - **Productos para el hogar**: 52,438 unidades, 2.62% de participación, ranking 9.\n- Esto sugiere que los productos líderes se concentran en **categorías comercialmente sólidas**, no en categorías rezagadas.\n\n### 3) Hay una relación clara entre ranking y participación en ventas\n- Los productos con mejor ranking tienen **mayor peso en ventas totales**.\n- Ejemplo:\n  - El maniquí tiene **ranking 9** y **4.69% de",
+      "latency_ms": 3647.9,
+      "hallucination_score": 0.42,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta introduce conclusiones no soportadas claramente por el contexto, como que existe una 'relación clara entre ranking y participación en ventas' y que los productos líderes se concentran en categorías comercialmente sólidas. Además, afirma que el maniquí es 'el más destacado' entre los productos mostrados, pero el contexto solo indica que está en ranking 9 y nivel TOP, no que sea el más vendido de todos los productos listados. También mezcla datos de categorías y tendencias mensuales que no responden directamente a la pregunta sobre patrones en los productos más vendidos.",
+      "quality_score": 0.84,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, útil y bien sintetizada; identifica patrones relevantes entre volumen, ranking y desempeño por categoría. Como mejora, podría conectar más explícitamente los patrones con la pregunta de 'productos más vendidos' y evitar inferencias algo generales sobre categorías sin suficiente evidencia directa.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 935,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué riesgos ves en el inventario actual?",
+      "temperature": 0.0,
+      "answer": "Veo **dos riesgos principales** en el inventario actual:\n\n### 1) Riesgo de inventario inmovilizado / obsoleto\nHay al menos **dos productos con stock sin movimiento en el último año**:\n- **Carrito de almacenamiento móvil de 4 niveles (AO-29)**: 27 unidades, alerta **baja**, riesgo de **estancamiento leve**.\n- **Organizador de 2 niveles (AO-18)**: 20 unidades, alerta **baja**, riesgo de **estancamiento leve**.\n\n**Lectura de negocio:**  \nAunque la alerta es baja, ya existe inventario que no rota. Esto puede anticipar:\n- acumulación de capital inmovilizado,\n- mayor probabilidad de obsolescencia si el catálogo cambia,\n- presión sobre espacio y costos de almacenamiento.\n\n### 2) Riesgo de concentración de inventario en pocos almacenes\nLos almacenes con mayor peso en el inventario son:\n- **almacen_nuevo**: 519,180 unidades, **13.77%** del inventario total, nivel **central**.\n- **bodega-almacen**: 457,063 unidades, **12.12%**, nivel **importante**.\n- **A41-p4**: 180,108 unidades, **4.78%**, nivel **importante**.\n\n**Lectura de negocio:**  \nHay una concentración relevante del stock en unos pocos almacenes, especialmente en los de mayor participación. Esto implica:\n- mayor dependencia operativa de esos centros,\n- riesgo de desbalance si alguno presenta incidencias,\n- posible dificultad para redistribuir inventario si la demanda cambia por zona.\n\n### Riesgo adicional: baja participación de varios almacenes\nVarios almacenes tienen participación muy baja:\n- **Almacen Temporal**: 2.54%\n- **Bodega Fiscal**: 0.25%\n- **Iza**:",
+      "latency_ms": 3306.21,
+      "hallucination_score": 0.93,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en el contexto: identifica dos productos sin movimiento con alerta baja y describe almacenes con participación alta o baja usando los datos dados. La única posible debilidad es que algunas implicaciones de negocio (capital inmovilizado, obsolescencia, dependencia operativa) son inferencias razonables, pero no contradicen el contexto.",
+      "quality_score": 0.92,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, ejecutiva y bien alineada al contexto. Identifica correctamente el riesgo de stock sin movimiento y la concentración del inventario por almacén. Como mejora menor, podría cuantificar mejor el impacto total y cerrar la lista de almacenes con baja participación, pero no afecta la utilidad general.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 947,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué riesgos ves en el inventario actual?",
+      "temperature": 0.3,
+      "answer": "Veo **dos riesgos principales** en el inventario actual:\n\n### 1) Riesgo de inventario inmovilizado en productos específicos\nHay al menos **dos referencias con stock sin movimiento en el último año**, aunque con **alerta baja**:\n- **Carrito de almacenamiento móvil de 4 niveles (AO-29)**: 27 unidades, sin ventas en 1 año, riesgo de **estancamiento leve**.\n- **Organizador de 2 niveles (AO-18)**: 20 unidades, sin ventas en 1 año, riesgo de **estancamiento leve**.\n\n**Impacto de negocio:**  \nNo parece un problema crítico por volumen, pero sí indica **capital inmovilizado**, posible **obsolescencia comercial** y necesidad de revisar si estos productos deben seguir activos en catálogo o si requieren acciones promocionales.\n\n### 2) Riesgo de concentración de inventario en pocos almacenes\nEl inventario está **muy concentrado** en algunos almacenes de mayor peso:\n- **almacen_nuevo**: 519,180 unidades, **13.77%** del inventario total, nivel **central**.\n- **bodega-almacen**: 457,063 unidades, **12.12%**, nivel **importante**.\n- **A41-p4**: 180,108 unidades, **4.78%**, nivel **importante**.\n\nEn contraste, varios almacenes tienen **participación muy baja**:\n- **Almacen Temporal**: 2.54%\n- **Bodega Fiscal**: 0.25%\n- **Iza**: 0.19%\n\n**Impacto de negocio:**  \nEsto sugiere un riesgo operativo de **dependencia de ciertos almacenes** y posible **desbalance en la distribución del stock**. Si un almacén clave presenta incidencias, puede afectar disponibilidad y servicio.\n\n### Lectura ejecutiva\n- El riesgo",
+      "latency_ms": 3787.94,
+      "hallucination_score": 0.93,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en el contexto: identifica los dos productos sin movimiento y resume la distribución por almacenes. La mención de capital inmovilizado, posible obsolescencia y riesgo operativo por dependencia de almacenes es una inferencia razonable, aunque no aparece explícitamente en el contexto.",
+      "quality_score": 0.94,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, relevante y bien sintetizada. Identifica correctamente el stock sin movimiento y la concentración por almacenes, con impacto ejecutivo. Solo podría afinarse más el apego al contexto evitando inferir 'concentración' como riesgo crítico sin evidencia explícita de desbalance operativo.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 947,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué riesgos ves en el inventario actual?",
+      "temperature": 0.7,
+      "answer": "Veo **dos riesgos principales** en el inventario actual:\n\n### 1) Riesgo de obsolescencia o estancamiento de producto\nHay al menos **dos referencias con stock sin movimiento en el último año**:\n\n- **Carrito de almacenamiento móvil de 4 niveles (AO-29)**  \n  - Stock actual: **27 unidades**\n  - Nivel de alerta: **baja**\n  - Riesgo: **estancamiento leve**\n\n- **Organizador de 2 niveles (AO-18)**  \n  - Stock actual: **20 unidades**\n  - Nivel de alerta: **baja**\n  - Riesgo: **estancamiento leve**\n\n**Interpretación de negocio:**  \nAunque la alerta es baja, el hecho de que no hayan vendido en 12 meses indica riesgo de **capital inmovilizado**, posible **desalineación con la demanda** y necesidad de revisar si deben mantenerse, promocionarse o liquidarse.\n\n---\n\n### 2) Riesgo de concentración de inventario en almacenes relevantes\nHay almacenes con **alta carga de stock**, lo que puede implicar presión operativa y mayor exposición si la rotación no acompaña:\n\n- **almacen_nuevo**\n  - Stock total: **519,180 unidades**\n  - Participación: **13.77%**\n  - Nivel: **central**\n\n- **bodega-almacen**\n  - Stock total: **457,063 unidades**\n  - Participación: **12.12%**\n  - Nivel: **importante**\n\n- **A41-p4**\n  - Stock total: **180,108 unidades**\n  - Participación: **4.78%**\n  - Nivel: **importante**\n\n**Interpretación de negocio:**  \nEstos almacenes concentran una parte relevante del inventario total, por lo que cualquier problema de rotación, exactitud de inventario o capacidad operativa tendría impacto más alto. No se observa",
+      "latency_ms": 3685.42,
+      "hallucination_score": 0.97,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los productos sin movimiento y en los datos de participación/stock de los almacenes presentes en el contexto. La interpretación de riesgo de capital inmovilizado y concentración operativa es razonable y está claramente sustentada. No introduce datos externos relevantes.",
+      "quality_score": 0.93,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, relevante y bien sintetizada. Identifica correctamente el riesgo de estancamiento en dos productos sin movimiento y el riesgo de concentración operativa en almacenes con alto volumen. Como mejora menor, podría haber distinguido más entre concentración de inventario y riesgo real, ya que el contexto no muestra problemas de rotación o capacidad en almacenes.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 947,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué productos representan mayor riesgo de estancamiento?",
+      "temperature": 0.0,
+      "answer": "Los productos con **mayor riesgo de estancamiento** son los que combinan **alto stock**, **cero ventas en el último año** y **alerta alta por sobrestock sin rotación**.\n\n### Principales riesgos\n1. **VASO MOTIVACIONAL 1500ml**  \n   - Stock: **736 unidades**\n   - Ranking de stock entre productos sin movimiento: **10**\n   - Nivel de alerta: **ALTA**\n   - Riesgo: **Sobrestock sin rotación**\n   - Es el caso más crítico por volumen de inventario.\n\n2. **TERMO TERMICO 500ml**  \n   - Stock: **481 unidades**\n   - Ranking: **11**\n   - Nivel de alerta: **ALTA**\n   - Riesgo: **Sobrestock sin rotación**\n\n3. **Gel Painting - (Gama I)**  \n   - Stock: **321 unidades**\n   - Ranking: **13**\n   - Nivel de alerta: **ALTA**\n   - Riesgo: **Sobrestock sin rotación**\n\n### Riesgo menor, pero a vigilar\n- **Carrito de almacenamiento móvil de 4 niveles**  \n  - Stock: **27 unidades**\n  - Nivel de alerta: **BAJA**\n  - Riesgo: **Estancamiento leve**\n\n- **Organizador de 2 niveles**  \n  - Stock: **20 unidades**\n  - Nivel de alerta: **BAJA**\n  - Riesgo: **Estancamiento leve**\n\n- **Marcatextos** y variantes  \n  - Stocks entre **12 y 13 unidades**\n  - Nivel de alerta: **BAJA**\n  - Riesgo: **Estancamiento leve**\n\n### Conclusión ejecutiva\nEl mayor riesgo de estancamiento está concentrado en **VASO MOTIVACIONAL 1500ml**, **TERMO TERMICO 500ml** y **Gel Painting - (G",
+      "latency_ms": 3436.1,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los productos con alerta ALTA y riesgo de SOBRESTOCK SIN ROTACION presentes en el contexto. La conclusión sobre cuáles representan mayor riesgo está bien sustentada. Solo hay una ligera imprecisión al decir 'mayor riesgo de estancamiento' cuando el contexto distingue entre 'sobrestock sin rotación' y 'estancamiento leve', pero no introduce datos no soportados.",
+      "quality_score": 0.97,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, relevante y bien sintetizada. Identifica correctamente los productos de mayor riesgo según el contexto (alerta alta, alto stock y sin ventas en el último año) y distingue adecuadamente los casos de riesgo menor. Solo queda ligeramente incompleta la conclusión final, que se corta al final.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1134,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué productos representan mayor riesgo de estancamiento?",
+      "temperature": 0.3,
+      "answer": "Los productos con **mayor riesgo de estancamiento** son los que combinan **alto stock**, **cero ventas en el último año** y **alerta ALTA por sobrestock sin rotación**. En el contexto, destacan claramente estos tres:\n\n### Mayor riesgo\n1. **VASO MOTIVACIONAL 1500ml**  \n   - Stock: **736 unidades**\n   - Ranking por stock entre productos sin movimiento: **10**\n   - Riesgo: **Sobrestock sin rotación**\n   - Nivel de alerta: **ALTA**\n   - Es el caso más crítico por volumen de inventario inmovilizado.\n\n2. **TERMO TERMICO 500ml**  \n   - Stock: **481 unidades**\n   - Ranking: **11**\n   - Riesgo: **Sobrestock sin rotación**\n   - Nivel de alerta: **ALTA**\n   - También representa un riesgo alto por acumulación de stock sin ventas.\n\n3. **Gel Painting - (Gama I)**  \n   - Stock: **321 unidades**\n   - Ranking: **13**\n   - Riesgo: **Sobrestock sin rotación**\n   - Nivel de alerta: **ALTA**\n   - Aunque tiene menos stock que los anteriores, sigue siendo un foco relevante de inmovilización.\n\n### Riesgo menor, pero a vigilar\nLos siguientes productos muestran **estancamiento leve** y, por su stock bajo, el impacto es menor por ahora:\n\n- **Carrito de almacenamiento móvil de 4 niveles** — 27 unidades, alerta **BAJA**\n- **Organizador de 2 niveles** — 20 unidades, alerta **BAJA**\n- **Marcatextos Mini** y variantes — entre 12 y 13 unidades, alerta **BAJA**\n\n### Conclusión ejecutiva\nEl mayor riesgo de estancamiento está concentrado en **VASO MOTIVACIONAL 1500ml**, **TERMO",
+      "latency_ms": 3119.76,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los productos con alerta ALTA y tipo de riesgo SOBRESTOCK SIN ROTACION presentes en el contexto. La clasificación de VASO MOTIVACIONAL 1500ml, TERMO TERMICO 500ml y Gel Painting - (Gama I) como mayor riesgo está soportada. La mención de productos con alerta BAJA también coincide con el contexto. No se observan datos inventados relevantes.",
+      "quality_score": 0.98,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, relevante y bien sintetizada. Identifica correctamente los productos con mayor riesgo según el contexto (alerta ALTA, alto stock y sin ventas), y distingue adecuadamente los casos de riesgo menor. Solo queda ligeramente incompleta la conclusión final, pero no afecta la utilidad ejecutiva.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1134,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué productos representan mayor riesgo de estancamiento?",
+      "temperature": 0.7,
+      "answer": "Los productos con **mayor riesgo de estancamiento** son los que tienen **alerta ALTA** por **sobrestock sin rotación** y además **no registran ventas en el último año**. En este contexto, los más críticos son:\n\n### Principales riesgos\n1. **VASO MOTIVACIONAL 1500ml**  \n   - Stock: **736 unidades**\n   - Ranking por stock entre productos sin movimiento: **10**\n   - Nivel de alerta: **ALTA**\n   - Riesgo: **sobrestock sin rotación**\n\n2. **TERMO TERMICO 500ml**  \n   - Stock: **481 unidades**\n   - Ranking por stock entre productos sin movimiento: **11**\n   - Nivel de alerta: **ALTA**\n   - Riesgo: **sobrestock sin rotación**\n\n3. **Gel Painting - (Gama I)**  \n   - Stock: **321 unidades**\n   - Ranking por stock entre productos sin movimiento: **13**\n   - Nivel de alerta: **ALTA**\n   - Riesgo: **sobrestock sin rotación**\n\n### Productos con riesgo menor\nLos siguientes muestran **estancamiento leve** y, aunque no han vendido en el último año, el impacto es menor por su volumen de stock:\n\n- **Carrito de almacenamiento móvil de 4 niveles** — 27 unidades — alerta **BAJA**\n- **Organizador de 2 niveles** — 20 unidades — alerta **BAJA**\n- **Marcatextos Mini 24 empaques de 6pz** — 13 unidades — alerta **BAJA**\n- **Marcatextos mini Dulce 24empaques 6pz** — 12 unidades — alerta **BAJA**\n- **Marcatextos Mini 24 empaques de 6pz c/u** — 12 unidades — alerta **BAJA**\n\n### Lectura ejecutiva\nEl mayor riesgo está",
+      "latency_ms": 3352.98,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se ajusta al contexto: identifica correctamente los productos con alerta ALTA y riesgo de sobrestock sin rotación, y distingue los de alerta BAJA como riesgo menor. No introduce información no soportada; solo añade una interpretación razonable sobre 'mayor riesgo de estancamiento'.",
+      "quality_score": 0.97,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, relevante y bien alineada con el contexto. Identifica correctamente los productos con alerta ALTA y prioriza por stock/riesgo. Como mejora menor, podría cerrar la lectura ejecutiva de forma más completa, pero no afecta la calidad general.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1134,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Dónde ves oportunidades de crecimiento?",
+      "temperature": 0.0,
+      "answer": "Veo oportunidades de crecimiento principalmente en estados con **baja participación, baja concentración y nivel comercial secundario**, porque ahí hay espacio para expandir cobertura sin depender de pocos clientes.\n\n### Prioridades claras de crecimiento\n1. **Estado de México**\n   - Es el más relevante por escala: **3.72% de participación**, **159 clientes activos** y **3.38 M de ventas**.\n   - Ya es **Zona Importante** y tiene **concentración media**, por lo que el crecimiento aquí puede tener mayor impacto absoluto.\n   - Oportunidad: profundizar penetración en la base actual y aumentar frecuencia de compra.\n\n2. **Guanajuato**\n   - Tiene buena base para crecer: **58 clientes activos**, **242 pedidos** y **1.58 M de ventas**.\n   - Aunque su ticket promedio es más bajo (**6,531.63**), su volumen indica potencial para escalar.\n   - Oportunidad: mejorar ticket y convertir más clientes en compradores recurrentes.\n\n3. **Querétaro**\n   - Presenta **38 clientes activos**, **143 pedidos** y **1.11% de participación**.\n   - Está en una posición intermedia: no es de los más pequeños, pero sí con margen para crecer.\n   - Oportunidad: aumentar cobertura comercial y elevar participación.\n\n### Oportunidades tácticas en estados con menor base pero potencial\n4. **Durango y Guerrero**\n   - Ambos muestran **baja concentración** y observación explícita de **potencial de crecimiento**.\n   - Guerrero destaca ligeramente por volumen: **1.13 M de ventas** y **30 clientes activos**.\n   - Durango tiene **25 clientes** y **996 mil** en ventas.\n   - Oportunidad: expansión de cartera y activación de clientes inactivos o de baja frecuencia.\n\n5. **Morelos, Aguascalientes y Nayarit**\n   -",
+      "latency_ms": 3309.8,
+      "hallucination_score": 0.93,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los estados y métricas presentes en el contexto. La única posible imprecisión es que prioriza Estado de México por escala e impacto, lo cual es una inferencia razonable aunque no está formulada explícitamente en el contexto.",
+      "quality_score": 0.92,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, ejecutiva y muy alineada al contexto: identifica correctamente los estados con mayor potencial según participación, concentración y nivel comercial. Sintetiza bien y prioriza oportunidades, aunque podría cerrar la lista de Morelos, Aguascalientes y Nayarit para ser más completa.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1043,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Dónde ves oportunidades de crecimiento?",
+      "temperature": 0.3,
+      "answer": "Veo oportunidades de crecimiento principalmente en estados con **baja participación, baja concentración y nivel comercial secundario**, porque ahí hay espacio para capturar más ventas sin depender de pocos clientes.\n\n### Zonas con mayor potencial\n1. **Estado de México**\n   - Es la zona más relevante dentro del grupo por volumen: **3.38 M de pesos**, **159 clientes activos** y **545 pedidos**.\n   - Aunque ya tiene mayor escala, su **participación en ventas es 3.72%** y sigue con observación de **potencial de crecimiento**.\n   - **Oportunidad:** ampliar penetración sobre una base de clientes ya sólida.\n\n2. **Guanajuato**\n   - Tiene **58 clientes activos** y **242 pedidos**, con **1.58 M de pesos** en ventas.\n   - Presenta **baja concentración** y ranking **18**, mejor que varias zonas secundarias.\n   - **Oportunidad:** escalar volumen aprovechando una base comercial relativamente más desarrollada.\n\n3. **Querétaro**\n   - Registra **38 clientes activos**, **143 pedidos** y **1.01 M de pesos**.\n   - Su participación es todavía baja: **1.11%**.\n   - **Oportunidad:** crecer en clientes y frecuencia de compra, ya que tiene una base intermedia.\n\n### Zonas con oportunidad táctica, pero menor escala\n- **Guerrero**: buen ticket promedio (**9,452.82 pesos**) y **30 clientes activos**; puede crecer bien si se aumenta cobertura.\n- **Durango**: **25 clientes activos**, **126 pedidos**, ticket promedio de **7,908.56 pesos**; tiene baja participación y espacio para expansión.\n- **Morelos**, **Aguascalientes** y **Nayarit**: muestran **participaciones muy bajas** y rankings más rezagados, por lo que son oportunidades de crecimiento,",
+      "latency_ms": 3846.32,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los datos del contexto: identifica estados con baja participación, baja concentración y nivel comercial secundario, y usa cifras presentes en las fuentes. No introduce información externa relevante ni conclusiones claramente no soportadas.",
+      "quality_score": 0.93,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, relevante y bien sintetizada. Identifica correctamente las zonas con mayor potencial usando los criterios del contexto (baja participación, baja concentración y nivel secundario), y prioriza Estado de México, Guanajuato y Querétaro. Solo podría mejorar cerrando la última frase truncada y afinando la priorización entre zonas tácticas.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1043,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Dónde ves oportunidades de crecimiento?",
+      "temperature": 0.7,
+      "answer": "Veo oportunidades de crecimiento principalmente en estados con **baja participación, baja concentración y potencial explícito de expansión**. En este contexto, destacaría:\n\n### 1) Estados con mayor espacio de crecimiento por baja participación\n- **Estado de México**: es el más relevante por tamaño relativo dentro del grupo. Tiene **159 clientes activos**, **545 pedidos** y **3.72% de participación en ventas**. Aunque ya es **Zona Importante**, sigue teniendo margen para crecer por su base instalada y volumen.\n- **Guanajuato**: presenta **58 clientes activos**, **242 pedidos** y **1.74% de participación**. Su volumen operativo es sólido y aún tiene espacio para capturar más ventas.\n- **Querétaro**: con **38 clientes activos** y **1.11% de participación**, muestra una base comercial interesante para escalar.\n- **Guerrero** y **Durango**: ambos tienen participación baja, pero con actividad suficiente para considerarlos como zonas con potencial de desarrollo.\n- **Morelos, Aguascalientes y Nayarit**: tienen menor escala actual, pero también baja participación, por lo que pueden crecer si se activan mejor los clientes existentes o se amplía la cobertura.\n\n### 2) Oportunidad más clara por combinación de escala y potencial\nSi tuviera que priorizar, pondría primero a:\n1. **Estado de México**\n2. **Guanajuato**\n3. **Querétaro**\n\n¿Por qué? Porque combinan:\n- mayor base de clientes/pedidos,\n- participación todavía relativamente baja,\n- y condiciones de **baja o media concentración**, lo que sugiere espacio para ampliar la penetración comercial.\n\n### 3) Zonas con oportunidad pero menor prioridad\n- **Durango, Guerrero, Morelos, Aguascalientes y Nayarit** son oportunidades válidas, pero con menor peso comercial hoy por su menor volumen",
+      "latency_ms": 3876.7,
+      "hallucination_score": 0.72,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta introduce una priorización y criterios no explicitados en el contexto, como 'mayor base de clientes/pedidos' y 'espacio para capturar más ventas' como conclusión comparativa. Además, afirma que Estado de México es 'el más relevante' y que Guanajuato/Querétaro son prioridad, lo cual es una inferencia razonable pero no está soportada de forma directa por el contexto. También menciona 'baja o media concentración' como señal de expansión, aunque solo Estado de México tiene concentración media; el resto es baja concentración.",
+      "quality_score": 0.93,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, relevante y bien sintetizada. Prioriza correctamente las zonas con mayor potencial usando los datos del contexto, especialmente Estado de México, Guanajuato y Querétaro. Como mejora menor, podría haber sido más explícita en que todas las zonas listadas muestran potencial, pero la priorización está bien justificada.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1043,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué decisiones tomarías para mejorar ventas?",
+      "temperature": 0.0,
+      "answer": "Para mejorar ventas, tomaría decisiones en dos frentes: **defender el mercado principal** y **acelerar el crecimiento en zonas con potencial**.\n\n### 1) Priorizar Ciudad de México como motor principal\nCiudad de México es claramente el mercado más relevante:\n- **22.7% de participación en ventas**\n- **$20.6 M en ventas**\n- **217 clientes activos**\n- **Ranking 1**\n- **Zona clave**\n\n**Decisión:** asignar ahí la mayor parte del esfuerzo comercial, porque cualquier mejora en conversión, frecuencia o ticket impacta más el total del negocio que en otras zonas.\n\n### 2) Escalar Puebla como siguiente prioridad\nPuebla ya muestra una base comercial sólida:\n- **3.39% de participación**\n- **85 clientes activos**\n- **297 pedidos**\n- **Ranking 8**\n- **Zona importante**\n\n**Decisión:** reforzar cobertura comercial y seguimiento a clientes para convertir esta zona en un segundo motor de crecimiento. Tiene mejor escala que otras zonas secundarias y más capacidad de aportar volumen.\n\n### 3) Impulsar Sinaloa por su mejor combinación de volumen y ticket\nSinaloa destaca entre las zonas secundarias:\n- **2.63% de participación**\n- **$2.4 M en ventas**\n- **Ticket promedio de $13,383.57**, el más alto entre las zonas comparadas\n- **179 pedidos**\n- **Ranking 11**\n\n**Decisión:** invertir en desarrollo comercial en Sinaloa, porque combina volumen razonable con ticket alto. Es una oportunidad clara para crecer ingresos sin depender solo de más clientes.\n\n### 4) Activar planes de crecimiento en Querétaro, Morelos, Zacatecas y Aguascalientes\nEstas zonas tienen:\n- **baja participación**\n- **baja concentración**\n- **ranking bajo**\n- observación de **potencial de crecimiento**\n\nEjemplos:\n- **",
+      "latency_ms": 4124.47,
+      "hallucination_score": 0.93,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en el contexto para priorizar Ciudad de México, Puebla y Sinaloa, y para señalar potencial de crecimiento en Querétaro, Morelos, Zacatecas y Aguascalientes. No introduce datos claramente ajenos al contexto. Solo queda algo incompleta al cortar la última sección, pero no implica alucinación.",
+      "quality_score": 0.91,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, ejecutiva y bien alineada al contexto. Prioriza correctamente Ciudad de México, Puebla y Sinaloa con base en datos concretos. Como detalle menor, queda incompleta al final y no cierra la cuarta línea de acción, lo que reduce un poco la síntesis.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1024,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué decisiones tomarías para mejorar ventas?",
+      "temperature": 0.3,
+      "answer": "Para mejorar ventas, tomaría decisiones enfocadas en **priorizar mercados con mayor potencial y elevar el valor por cliente**, en lugar de dispersar esfuerzos en zonas de baja contribución.\n\n### 1) Concentrar inversión comercial en los estados con mejor tracción\nLos estados con mejor desempeño relativo fuera del principal mercado son:\n\n- **Puebla**: 3.39% de participación, **ranking 8**, 85 clientes activos y 3.08 M de ventas.\n- **Sinaloa**: 2.63% de participación, **ranking 11**, ticket promedio alto de **13,383.57** pesos.\n- **Querétaro**: 1.11% de participación, 38 clientes activos y 1.01 M de ventas.\n\n**Decisión:** asignar más cobertura comercial, seguimiento y campañas a estos estados porque ya muestran base activa y potencial de escalamiento.\n\n### 2) Defender y profundizar Ciudad de México\nCiudad de México es claramente el motor del negocio:\n- **22.7% de participación**\n- **ranking 1**\n- **217 clientes activos**\n- **20.64 M de ventas**\n- ticket promedio de **12,361.87** pesos\n\n**Decisión:** proteger esta zona clave con foco en retención, recompra y aumento de ticket. Cualquier caída aquí impactaría fuertemente el total.\n\n### 3) Activar planes de crecimiento en zonas secundarias con baja participación\nEstados como **Aguascalientes, Morelos y Zacatecas** tienen:\n- baja participación\n- baja concentración\n- ranking bajo\n- observación explícita de **potencial de crecimiento**\n\n**Decisión:** no tratarlos como prioridad de volumen inmediato, sino como zonas de desarrollo con acciones tácticas: prospección, reactivación de clientes y aumento de frecuencia de compra.\n\n### 4) Elevar ticket promedio en estados con buena base de clientes\nHay",
+      "latency_ms": 3754.37,
+      "hallucination_score": 0.96,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los datos del contexto: identifica Ciudad de México como mercado principal, y usa Puebla, Sinaloa y Querétaro como estados con potencial según sus ventas, ranking y participación. También menciona Aguascalientes, Morelos y Zacatecas como zonas secundarias con baja participación, lo cual coincide con el contexto. No introduce datos externos ni conclusiones claramente no soportadas; solo queda incompleta al final.",
+      "quality_score": 0.91,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, ejecutiva y bien alineada al contexto. Prioriza zonas con mayor potencial, protege el mercado principal y propone acciones concretas. Solo queda incompleta al final y podría cerrar con una decisión sobre categorías o ticket promedio.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1024,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué decisiones tomarías para mejorar ventas?",
+      "temperature": 0.7,
+      "answer": "Para mejorar ventas, tomaría decisiones diferenciadas por prioridad comercial, porque el contexto muestra una clara concentración del negocio en Ciudad de México y un grupo de estados con potencial de crecimiento pero todavía baja participación.\n\n### 1) Defender y expandir el principal mercado: Ciudad de México\n- **Prioridad máxima**: es la **zona clave**, con **22.7% de participación en ventas**, **20.6 M de pesos**, **217 clientes activos** y el **ranking 1**.\n- Decisión: **proteger la base actual y buscar mayor ticket por cliente**.\n- Razón: ya tiene volumen y un **ticket promedio de 12,361.87**, superior a varios estados analizados, por lo que hay espacio para crecer vía más valor por pedido, no solo por más clientes.\n- Acción sugerida: enfocar promociones, fidelización y venta cruzada en esta zona para no perder el mercado más rentable.\n\n### 2) Acelerar crecimiento en estados con potencial y buena base comercial\nPriorizaría estados con **baja concentración pero mayor tamaño relativo**, porque ahí el retorno comercial puede ser más rápido:\n\n- **Puebla**:  \n  - **3.39% de participación**, **85 clientes activos**, **297 pedidos**, **3.08 M de ventas**, **ranking 8**.  \n  - Es la mejor oportunidad entre las zonas secundarias por escala y actividad.\n- **Sinaloa**:  \n  - **2.63% de participación**, **38 clientes**, **179 pedidos**, **2.40 M de ventas**, **ranking 11**.  \n  - Tiene un **ticket promedio alto (13,383.57)**, lo que sugiere capacidad para vender más valor por pedido.\n- **Querétaro**:  \n  - **1.11% de participación**, **38 clientes**, **143 pedidos**, **ranking 21**.  \n  - Tiene base comercial",
+      "latency_ms": 4150.71,
+      "hallucination_score": 0.93,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en el contexto: prioriza Ciudad de México por ser zona clave y menciona Puebla, Sinaloa y Querétaro con datos coherentes. No introduce información claramente inventada. Solo queda incompleta al cortar la última sección, pero eso no constituye alucinación.",
+      "quality_score": 0.93,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, ejecutiva y muy alineada al contexto: prioriza Ciudad de México y estados con potencial como Puebla, Sinaloa y Querétaro, usando datos concretos. Como mejora menor, quedó incompleta al final y no cerró con decisiones para Aguascalientes, Morelos y Zacatecas ni con una conclusión final.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 1024,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuál es la proyección futura del negocio?",
+      "temperature": 0.0,
+      "answer": "Con el contexto disponible, **la proyección futura del negocio es positiva**, aunque **no puede estimarse con precisión numérica** porque no hay un modelo de forecast ni datos de más largo plazo.\n\n### Lectura ejecutiva\n- El negocio muestra una **tendencia general de crecimiento** durante 2025.\n- Los meses más recientes refuerzan esa señal:\n  - **2025-11**: crecimiento moderado de **3.49%**\n  - **2025-12**: crecimiento fuerte de **14.31%** y **mayor ingreso del periodo** con **$10,013,497.91**\n- Esto sugiere que el negocio **cerró el año con impulso positivo** y con capacidad de seguir creciendo en el corto plazo.\n\n### Señales relevantes\n- **Ventas en ascenso**: de niveles cercanos a **$7.2M–$7.2M** en mayo-junio, sube a **$8.46M** en octubre y alcanza **$10.01M** en diciembre.\n- **Ticket promedio al alza**: en diciembre llega a **$15,103.32**, por encima de meses previos, lo que indica mejor valor por pedido.\n- **Pedidos relativamente estables**: se mueven en un rango aproximado de **568 a 778**, por lo que el crecimiento reciente parece venir más por **mayor valor de compra** que por un salto fuerte en volumen.\n\n### Proyección de negocio\n- **Corto plazo:** expectativa de continuidad en crecimiento, apoyada por el cierre fuerte de diciembre.\n- **Riesgo principal:** que el crecimiento dependa más del ticket promedio que del volumen; si el ticket se desacelera, el ritmo de ventas podría moderarse.\n- **Oportunidad:** sostener el incremento del ticket y convertirlo en una tendencia estable para consolidar ingresos.\n\n### Conclusión",
+      "latency_ms": 3893.12,
+      "hallucination_score": 0.62,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta infiere una 'proyección futura' y un 'corto plazo' positivo, pero el contexto solo muestra tendencias históricas mensuales de 2025 y no contiene un forecast ni datos suficientes para proyectar el futuro. También introduce conclusiones como que el crecimiento viene más por ticket promedio que por volumen, lo cual es una interpretación plausible pero no está explícitamente sustentada por el contexto.",
+      "quality_score": 0.94,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, ejecutiva y bien alineada con el contexto. Sintetiza correctamente la tendencia de crecimiento, usa datos recientes para sustentar la proyección y reconoce la limitación de no contar con un forecast formal. Como mejora menor, podría precisar más el horizonte temporal de la proyección.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 837,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuál es la proyección futura del negocio?",
+      "temperature": 0.3,
+      "answer": "Con base en el comportamiento mensual observado, la **proyección futura del negocio es positiva**, con una **tendencia de crecimiento sostenido**, aunque con cierta moderación en el ritmo.\n\n### Lectura ejecutiva\n- El negocio muestra una evolución claramente ascendente a lo largo del periodo analizado.\n- Los meses más recientes confirman esa tendencia:\n  - **2025-11**: crecimiento moderado de **3.49%**\n  - **2025-12**: crecimiento fuerte de **14.31%**\n- **2025-12 fue el mejor mes del periodo**, con **$10,013,497.91** en ventas, lo que refuerza una señal de expansión.\n\n### Qué sugiere esto hacia adelante\n- Si el patrón reciente se mantiene, el negocio tiene potencial de seguir creciendo en ventas.\n- El aumento del **ticket promedio** en diciembre (**$15,103.32**) frente a meses previos sugiere una mejora en el valor por pedido, lo cual es una señal favorable para la rentabilidad.\n- También se observa una base operativa relativamente estable en pedidos, con niveles cercanos a **663–778 pedidos** en los meses más fuertes.\n\n### Riesgos o alertas\n- Aunque la tendencia general es positiva, el crecimiento no es lineal:\n  - hubo meses de **caída moderada** o crecimiento casi plano, como **2025-09 (-1.29%)** y **2025-06 (0.18%)**.\n- Esto indica que el negocio aún puede tener variaciones mensuales y no conviene asumir un crecimiento uniforme.\n\n### Conclusión\nLa proyección futura del negocio es de **crecimiento favorable**, con buen impulso al cierre del periodo analizado. Sin embargo, el ritmo puede ser variable, por lo que la prioridad debería ser **sostener el nivel de ventas alcanzado en los meses pico y consolidar el aumento del ticket",
+      "latency_ms": 5121.23,
+      "hallucination_score": 0.93,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los datos del contexto: identifica crecimiento en los meses recientes, destaca 2025-12 como el mejor mes y menciona variaciones mensuales observadas. La proyección futura es una inferencia razonable basada en esa tendencia. No introduce datos externos ni conclusiones claramente no soportadas, aunque usa lenguaje predictivo que no está explícitamente en el contexto.",
+      "quality_score": 0.93,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, relevante y ejecutiva. Sintetiza bien la tendencia futura con base en los datos mensuales, incorpora señales positivas y riesgos. Solo podría ser más precisa al evitar inferencias demasiado firmes sobre la proyección, dado que el contexto muestra variabilidad mensual.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 837,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cuál es la proyección futura del negocio?",
+      "temperature": 0.7,
+      "answer": "Con el contexto disponible, **la proyección futura del negocio es positiva**, con una **tendencia de crecimiento sostenido** y señales de fortalecimiento hacia el cierre del periodo analizado.\n\n### Lectura ejecutiva\n- El negocio muestra un patrón general de **crecimiento fuerte** en varios meses clave: **abril, julio, octubre y diciembre**.\n- **Diciembre 2025 fue el mejor mes del periodo**, con:\n  - **Ventas totales:** 10,013,497.91 pesos\n  - **Pedidos:** 663\n  - **Ticket promedio:** 15,103.32 pesos\n  - **Variación vs. mes anterior:** 14.31%\n- Además, **octubre** también registró un crecimiento relevante del **18.04%** y **noviembre** mantuvo el avance con **crecimiento moderado** de **3.49%**.\n\n### Qué indica esto sobre el futuro\n- La trayectoria reciente sugiere que el negocio **tiene capacidad de seguir creciendo**.\n- El incremento del **ticket promedio** en los últimos meses, especialmente en diciembre, es una señal favorable: no solo se venden más pedidos, sino que también **cada pedido aporta más valor**.\n- Aunque hubo meses de menor dinamismo, como **septiembre** con una **caída moderada de -1.29%**, el impacto fue acotado y no rompió la tendencia general positiva.\n\n### Riesgos a vigilar\n- El crecimiento no ha sido completamente lineal; hay meses de **crecimiento moderado** y una **caída ligera**, lo que sugiere que la proyección futura depende de sostener el impulso comercial.\n- La variación de pedidos no siempre acompaña el crecimiento de ventas en la misma magnitud, por lo que conviene monitorear si el avance futuro viene por:\n  - más pedidos,\n  - mayor ticket promedio,\n  - o ambos",
+      "latency_ms": 3994.45,
+      "hallucination_score": 0.93,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se apoya en los datos del contexto: identifica meses con crecimiento fuerte, el mejor mes (2025-12), la variación de ventas y la caída moderada de 2025-09. La proyección positiva es una inferencia razonable basada en la tendencia observada. No introduce datos externos ni afirmaciones claramente no soportadas.",
+      "quality_score": 0.96,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara, ejecutiva y bien sustentada en el contexto. Resume la tendencia futura como positiva, cita meses clave y métricas relevantes, y añade riesgos a vigilar. Solo podría mejorar incorporando una proyección más explícita con horizonte temporal o escenario cuantitativo.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 837,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cómo está posicionada la empresa frente a la competencia?",
+      "temperature": 0.0,
+      "answer": "Con el contexto disponible, **la empresa parece estar bien posicionada en algunos nichos y zonas clave, pero no se puede medir su posición exacta frente a la competencia** porque no hay datos comparativos directos de competidores.\n\n### Lectura ejecutiva del posicionamiento\n- **Ciudad de México es el principal motor del negocio**:\n  - Lidera el ranking estatal (**#1**).\n  - Aporta **22.7% de las ventas totales**.\n  - Tiene **nivel comercial: ZONA CLAVE**.\n  - Esto sugiere una **posición fuerte y consolidada** en el mercado más importante.\n\n- **Hay presencia relevante en otras zonas, pero con menor peso competitivo**:\n  - **Quintana Roo**: ranking **#12**, participación **2.52%**, zona secundaria.\n  - **Querétaro**: ranking **#21**, participación **1.11%**, zona secundaria.\n  - **Nayarit**: ranking **#29**, participación **0.46%**, zona secundaria.\n  - En estas plazas, la empresa parece tener **menor penetración** y más espacio para crecer.\n\n### Lectura por categorías\n- La empresa muestra fortaleza en categorías con mejor desempeño:\n  - **Productos corporales**: ranking **6**, participación **4.74%**, desempeño **ALTO**.\n  - **Productos para el hogar**: ranking **9**, participación **2.62%**, desempeño **ALTO**.\n  - **Cosmetiqueras**: ranking **10**, desempeño **ALTO**.\n- En contraste:\n  - **Organizadores**: ranking **22**, participación **0.96%**, desempeño **BAJO**.\n- Esto indica que la empresa **compite mejor en categorías de mayor tracción**, mientras que en otras tiene una posición más débil.\n\n### Conclusión de negocio\n**La empresa está posicionada como líder",
+      "latency_ms": 5837.2,
+      "hallucination_score": 0.93,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se mantiene dentro del contexto: usa rankings, participación y niveles comerciales para inferir fortaleza en Ciudad de México y menor presencia en otras zonas y categorías. La única limitación es que menciona 'frente a la competencia' sin datos comparativos directos, pero lo aclara explícitamente y no inventa competidores.",
+      "quality_score": 0.84,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, ejecutiva y bien sintetizada. Se apega al contexto disponible y evita afirmar una comparación directa con competidores que no existe en los datos. Como mejora, podría cerrar con una conclusión más completa, ya que el texto queda truncado en 'líder'.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 989,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cómo está posicionada la empresa frente a la competencia?",
+      "temperature": 0.3,
+      "answer": "Con el contexto disponible, **la empresa muestra una posición comercial sólida en algunos frentes, pero no es posible medir su posición exacta frente a la competencia** porque no hay datos directos de competidores, cuota de mercado externa ni benchmarks del sector.\n\n### Lo que sí se puede inferir\n- **Ciudad de México es su mercado principal**:\n  - Lidera el ranking estatal (**#1**).\n  - Aporta **22.7% de las ventas totales**.\n  - Tiene **217 clientes activos** y **1,670 pedidos**.\n  - Se clasifica como **ZONA CLAVE** y se indica explícitamente que es el **principal mercado del negocio**.\n  - Esto sugiere una base competitiva fuerte en su plaza más importante.\n\n- **Hay presencia relevante en categorías estratégicas**:\n  - **Productos corporales**: ranking **#6**, nivel **ALTA**, con **4.74%** de participación.\n  - **Productos para el hogar**: ranking **#9**, nivel **ALTA**, con **2.62%** de participación.\n  - **Cosmetiqueras**: ranking **#10**, nivel **ALTA**, con **2.5%** de participación.\n  - Estas categorías parecen ser los motores más sólidos del negocio dentro del portafolio analizado.\n\n### Señales de debilidad o menor tracción\n- **Organizadores** tiene desempeño bajo:\n  - Ranking **#22**.\n  - Solo **0.96%** de participación en ventas.\n  - Nivel de desempeño **BAJA**.\n  - Esto indica una categoría con menor aporte competitivo al negocio.\n\n- En varias plazas fuera del mercado principal, la empresa tiene **baja participación**:\n  - **Querétaro**: ranking **#21**, **1.11%** de participación, zona secundaria.\n  - **Nayarit**: ranking **#29**,",
+      "latency_ms": 3481.33,
+      "hallucination_score": 0.93,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se mantiene dentro del contexto: infiere fortaleza en Ciudad de México y buen desempeño de algunas categorías, y aclara correctamente que no hay datos directos de competidores. No introduce benchmarks externos ni afirmaciones no soportadas. Solo queda una ligera inferencia competitiva, pero está razonablemente respaldada por rankings y niveles de desempeño.",
+      "quality_score": 0.93,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, útil y bien alineada con el contexto. Reconoce correctamente que no hay datos directos de competencia y, aun así, infiere una posición comercial sólida con evidencia concreta. Como mejora menor, podría ser más sintética y evitar repetir tanto los datos por fuente.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 989,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cómo está posicionada la empresa frente a la competencia?",
+      "temperature": 0.7,
+      "answer": "Con el contexto disponible, **la empresa muestra un posicionamiento comercial sólido, pero solo podemos evaluarlo de forma interna y por desempeño relativo entre zonas y categorías; no hay datos directos de competidores**. Por lo tanto, no es posible afirmar su posición frente a competidores externos con total precisión.\n\n### Lectura ejecutiva del posicionamiento\n- **Ciudad de México es el principal motor del negocio**:\n  - Lidera el ranking estatal (#1).\n  - Aporta **22.7% de las ventas totales**.\n  - Tiene **206.4 millones de pesos en ventas** y **217 clientes activos**.\n  - Se clasifica como **ZONA CLAVE** y el propio contexto la define como el **principal mercado del negocio**.\n- Esto sugiere que la empresa tiene una **fuerte presencia comercial en su mercado más relevante**, lo que normalmente es una señal de buen posicionamiento competitivo en esa plaza.\n\n### Fortalezas visibles\n- **Categorías con desempeño alto**:\n  - **Productos corporales**: ranking #6, 4.74% de participación, desempeño sólido.\n  - **Productos para el hogar**: ranking #9, desempeño sólido.\n  - **Cosmetiqueras**: ranking #10, desempeño sólido.\n- Estas categorías muestran que la empresa tiene **líneas de producto con tracción comercial**, lo que fortalece su capacidad de competir por volumen y valor.\n\n### Zonas con menor peso\n- **Querétaro, Nayarit y Quintana Roo** aparecen como **zonas secundarias** o de **baja participación relativa**.\n- Nayarit, en particular, tiene el menor peso entre las zonas listadas:\n  - **0.46% de participación**\n  - Ranking #29\n- Esto indica que la empresa **no tiene una cobertura homogénea**; su fortaleza está concentrada en mercados principales, mientras que en otras plazas aún",
+      "latency_ms": 3582.47,
+      "hallucination_score": 0.62,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta introduce una interpretación sobre la posición frente a competidores externos que no está soportada por el contexto, ya que no hay datos de competencia. También usa expresiones como 'posicionamiento competitivo' y 'capacidad de competir' como inferencias no explícitas. El resto sí se apoya en el desempeño interno mostrado.",
+      "quality_score": 0.84,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, ejecutiva y bien alineada con el contexto interno disponible. Sin embargo, no responde de forma directa a la competencia externa porque el contexto no incluye datos comparativos de competidores; por eso la conclusión debe leerse como posicionamiento relativo interno, no competitivo absoluto.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 989,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué clientes compran más en categorías específicas?",
+      "temperature": 0.0,
+      "answer": "Con el contexto disponible **no es posible saber con precisión qué clientes compran más en categorías específicas**, porque no hay una relación directa entre **cliente ↔ categoría** en los datos recuperados.\n\n### Lo que sí se puede inferir\n#### Clientes con mayor compra total\n- **BLACK PIG STORE**: 1,404,696.87 pesos, 78 pedidos, cliente TOP.\n- **Hanny Juarez Sanchez**: 561,181.0 pesos, 13 pedidos, cliente ALTO VALOR.\n- **Ariel Rodríguez Díaz**: 516,931.0 pesos, 27 pedidos, cliente ALTO VALOR.\n\n#### Categorías con mayor peso comercial\n- **Productos corporales**: 4,298,241.3 pesos, 102,376 unidades, participación 4.74%, ranking 6, desempeño ALTA.\n- **Productos para el hogar**: 2,372,965.5 pesos, 52,438 unidades, participación 2.62%, ranking 9, desempeño ALTA.\n- **Organizadores**: 874,611.19 pesos, desempeño BAJA pero ticket alto por unidad.\n- **Brochas** y **Utensilios** tienen menor impacto general.\n\n### Interpretación ejecutiva\n- Hay **clientes de alto valor**, pero el contexto no muestra qué categorías compra cada uno.\n- También hay **categorías fuertes** en ventas, pero no se puede asignarles clientes específicos.\n- Por tanto, **no se puede construir un ranking cliente-categoría** con esta información.\n\n### Prioridad de negocio\nSi buscas responder esa pregunta con precisión, haría falta un cruce transaccional que muestre:\n- cliente,\n- categoría comprada,\n- monto,\n- unidades,\n- frecuencia por categoría.\n\nSi quieres, puedo ayudarte a **armar una hipótesis comercial** con lo disponible, por ejemplo: qué clientes probablemente concentran mayor gasto en categorías",
+      "latency_ms": 3789.32,
+      "hallucination_score": 0.97,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se mantiene fiel al contexto: reconoce correctamente que no hay relación directa cliente↔categoría y solo resume datos presentes sobre clientes y categorías. No introduce asociaciones específicas no soportadas.",
+      "quality_score": 0.94,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, ejecutiva y se apega al contexto: reconoce correctamente que no existe relación cliente-categoría en los datos y evita inferencias no sustentadas. Además, resume bien los clientes y categorías relevantes y explica qué información faltaría para responder con precisión.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 931,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué clientes compran más en categorías específicas?",
+      "temperature": 0.3,
+      "answer": "Con el contexto disponible **no se puede identificar con precisión qué clientes compran más en categorías específicas**, porque no hay una relación directa entre **cliente ↔ categoría** en los datos proporcionados.\n\n### Lo que sí se puede inferir\n#### Clientes con mayor compra total\nLos clientes con mayor monto total comprado son:\n1. **BLACK PIG STORE** — **$1,404,696.87** en 78 pedidos  \n2. **Hanny Juarez Sanchez** — **$561,181.00** en 13 pedidos  \n3. **Ariel Rodríguez Díaz** — **$516,931.00** en 27 pedidos  \n\n#### Categorías con mayor peso comercial\nLas categorías con mejor desempeño en ventas son:\n- **Productos corporales** — **$4,298,241.30** y 4.74% de participación\n- **Productos para el hogar** — **$2,372,965.50** y 2.62% de participación\n\nLas categorías de menor impacto son:\n- **Organizadores**\n- **Brochas**\n- **Utensilios**\n\n### Lectura ejecutiva\n- **BLACK PIG STORE** es el cliente más relevante por volumen total de compra y frecuencia, por lo que probablemente sea un candidato prioritario para categorías de alto desempeño.\n- **Hanny Juarez Sanchez** destaca por el **ticket promedio más alto**, lo que sugiere compras de mayor valor por pedido, aunque con menor frecuencia.\n- **Ariel Rodríguez Díaz** también es un cliente de alto valor, con ticket promedio elevado y comportamiento ocasional.\n\n### Riesgo / limitación\nNo hay datos que indiquen **qué categoría compra cada cliente**, así que no es posible afirmar, por ejemplo, que un cliente específico compre más en “Productos corporales” o “Brochas”.\n\n### Recomendación\nSi buscas responder esa pregunta con precisión, se necesita un cruce transaccional por cliente y categoría",
+      "latency_ms": 5529.67,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se mantiene fiel al contexto: reconoce correctamente que no existe relación directa cliente↔categoría y solo resume datos presentes sobre clientes y categorías. La inferencia sobre posibles candidatos prioritarios es prudente y está claramente limitada por la falta de datos.",
+      "quality_score": 0.93,
+      "quality_label": "alta",
+      "quality_issues": "Respuesta clara y ejecutiva; reconoce correctamente la limitación del contexto al no existir cruce cliente-categoría. Sintetiza bien los clientes y categorías más relevantes, aunque no responde de forma directa qué cliente compra más en cada categoría por falta de datos.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 931,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Qué clientes compran más en categorías específicas?",
+      "temperature": 0.7,
+      "answer": "Con el contexto disponible **no se puede identificar con precisión qué clientes compran más en categorías específicas**, porque los datos recuperados muestran:\n\n- **Desempeño por categoría**: ventas, unidades, ticket promedio y ranking de la categoría.\n- **Perfil por cliente**: compras totales, frecuencia, ticket promedio y ranking del cliente.\n\nPero **no hay un cruce cliente–categoría** que permita saber, por ejemplo, qué cliente compra más en *Productos corporales* o en *Organizadores*.\n\n### Lo que sí se puede inferir\n#### Clientes con mayor peso comercial general\n- **BLACK PIG STORE**: 1,404,696.87 pesos, 78 pedidos, cliente **TOP**.\n- **Hanny Juarez Sanchez**: 561,181.0 pesos, 13 pedidos, cliente **ALTO VALOR**.\n- **Ariel Rodríguez Díaz**: 516,931.0 pesos, 27 pedidos, cliente **ALTO VALOR**.\n\n#### Categorías con mayor relevancia comercial\n- **Productos corporales**: 4,298,241.3 pesos, 102,376 unidades, nivel **ALTA**.\n- **Productos para el hogar**: 2,372,965.5 pesos, 52,438 unidades, nivel **ALTA**.\n- **Organizadores**: 874,611.19 pesos, nivel **BAJA**.\n- **Brochas**: 226,671.31 pesos, nivel **BAJA**.\n- **Utensilios**: 15,677 pesos, nivel **BAJA**.\n\n### Lectura ejecutiva\n- Hay clientes de alto valor, pero **no existe evidencia en el contexto para asignarlos a categorías concretas**.\n- Las categorías con mejor desempeño son **Productos corporales** y **Productos para el hogar**, por lo que sería razonable priorizar su análisis de clientes.\n- **",
+      "latency_ms": 3684.59,
+      "hallucination_score": 0.98,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se mantiene fiel al contexto: reconoce correctamente que no hay cruce cliente-categoría y solo resume datos presentes en las fuentes. No introduce información inventada ni conclusiones no soportadas.",
+      "quality_score": 0.96,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, ejecutiva y se apega al contexto. Identifica correctamente que no hay cruce cliente-categoría y evita inferencias no sustentadas. Como mejora menor, podría cerrar con una recomendación más accionable sobre qué dato faltaría para responder exactamente la pregunta.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 931,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cómo se relaciona el inventario con las ventas?",
+      "temperature": 0.0,
+      "answer": "Con el contexto disponible, **no se observa una relación directa entre inventario y ventas**, porque solo contamos con datos de **inventario por almacén** y no con métricas de ventas, rotación, demanda o despacho.\n\n### Lo que sí se puede inferir del inventario\n- Los almacenes con mayor peso en inventario son:\n  - **Almacen Central**: 17.52% del inventario total, ranking 2.\n  - **almacen_nuevo**: 13.77%, ranking 3.\n  - **bodega-almacen**: 12.12%, ranking 4.\n- Los almacenes con menor participación son:\n  - **Bodega Fiscal**: 0.25%.\n  - **A88-p3**: 1.45%.\n  - **Almacen Temporal**: 2.54%.\n\n### Interpretación de negocio\n- Los almacenes **CENTRAL** concentran una parte relevante del stock, lo que sugiere que probablemente soportan una mayor capacidad de abastecimiento.\n- Algunos almacenes con **muchos productos distintos** no necesariamente tienen alta participación en inventario:\n  - **bodega-almacen** tiene 2,996 productos distintos, pero 12.12% del inventario.\n  - **Almacen Temporal** tiene 484 productos distintos, pero solo 2.54%.\n- Esto indica que **la cantidad de referencias no equivale al volumen de stock**, por lo que no puede asumirse una relación directa con ventas.\n\n### Riesgos y oportunidades\n- **Riesgo**: sin datos de ventas no se puede identificar si el inventario está alineado con la demanda.\n- **Oportunidad**: comparar inventario con ventas permitiría detectar:\n  - almacenes con sobrestock,\n  - almacenes con riesgo de quiebre,\n  - y posibles desbalances entre stock y demanda.\n\n### Conclusión ejecutiva\nCon",
+      "latency_ms": 4505.38,
+      "hallucination_score": 0.97,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se limita a señalar que no hay datos de ventas en el contexto y a resumir correctamente métricas de inventario presentes en las fuentes. No introduce información externa ni conclusiones no soportadas.",
+      "quality_score": 0.92,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, relevante y bien sintetizada. Se apega al contexto al reconocer que no hay datos de ventas, por lo que evita inferencias indebidas. Además, ofrece una interpretación ejecutiva útil sobre concentración de inventario, diferencias entre referencias y stock, y oportunidades de análisis futuro.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 889,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cómo se relaciona el inventario con las ventas?",
+      "temperature": 0.3,
+      "answer": "Con el contexto disponible, **sí se puede ver una relación operativa entre inventario y ventas, pero no una relación directa cuantificada** porque no hay datos de ventas por almacén, rotación, ni demanda.\n\n### Lectura ejecutiva\n- Los almacenes con **mayor participación en inventario** concentran la mayor capacidad para abastecer ventas:\n  - **Almacen Central**: 17.52% del inventario total, ranking 2.\n  - **almacen_nuevo**: 13.77%, ranking 3.\n  - **bodega-almacen**: 12.12%, ranking 4.\n- Esto sugiere que estos almacenes son los principales soportes del negocio para atender la demanda.\n- En contraste, varios almacenes tienen **baja participación en inventario** y probablemente un rol más limitado en el abastecimiento:\n  - **Almacen Temporal**: 2.54%\n  - **A41-p4**: 4.78%\n  - **Vallejo-TP1**: 6.7%\n  - **A88-p3**: 1.45%\n  - **Bodega Fiscal**: 0.25%\n\n### Interpretación de negocio\n- **Más inventario no implica más ventas automáticamente**, pero sí mayor capacidad de respuesta comercial.\n- Los almacenes centrales e importantes con mayor stock probablemente sostienen una parte relevante de las ventas por disponibilidad y cobertura.\n- La **densidad de stock por producto** también da señales de concentración:\n  - **almacen_nuevo** tiene una densidad alta (1815.31), lo que indica mucha cantidad por producto.\n  - **Almacen Central** también muestra densidad relevante (701.19).\n  - **Bodega Fiscal** y **A88-p3** tienen densidades bajas, lo que puede limitar su capacidad de surtido.\n\n### Riesgos y oportunidades\n**Riesgos",
+      "latency_ms": 3176.81,
+      "hallucination_score": 0.41,
+      "hallucination_flag": true,
+      "hallucination_issues": "La respuesta introduce una relación con las ventas, demanda, rotación y abastecimiento que no aparece en el contexto. El contexto solo contiene datos de inventario por almacén; no hay información de ventas ni evidencia para afirmar que los almacenes con más inventario sostienen más ventas o capacidad comercial.",
+      "quality_score": 0.84,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara y ejecutiva, pero no responde de forma directa a la relación inventario-ventas porque el contexto no incluye datos de ventas. Además, queda incompleta al cortar en 'Riesgos y oportunidades' y no cerrar la idea.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 889,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    },
+    {
+      "query": "¿Cómo se relaciona el inventario con las ventas?",
+      "temperature": 0.7,
+      "answer": "Con el contexto disponible, **no se puede medir una relación directa entre inventario y ventas**, porque solo contamos con datos de inventario por almacén y **no hay información de ventas, rotación, demanda o despacho**.\n\n### Lo que sí se puede inferir del inventario\n- **Mayor concentración de inventario en pocos almacenes**:\n  - **Almacen Central**: 17.52% del inventario total, ranking 2.\n  - **almacen_nuevo**: 13.77%, ranking 3.\n  - **bodega-almacen**: 12.12%, ranking 4.\n- **Almacenes con menor peso en inventario**:\n  - **Bodega Fiscal**: 0.25%, ranking 14.\n  - **A88-p3**: 1.45%, ranking 10.\n  - **Almacen Temporal**: 2.54%, ranking 9.\n\n### Lectura de negocio\n- Los almacenes **CENTRAL** concentran una parte relevante del stock, lo que sugiere que probablemente soportan una mayor capacidad de abastecimiento.\n- Algunos almacenes tienen **alta cantidad de productos distintos pero baja participación en inventario**, como:\n  - **bodega-almacen**: 2,996 productos distintos y 12.12% del inventario.\n  - **Almacen Temporal**: 484 productos distintos y solo 2.54%.\n- La **densidad de stock por producto** varía mucho:\n  - Muy alta en **almacen_nuevo** (1815.31) y **Almacen Central** (701.19).\n  - Muy baja en **Bodega Fiscal** (56.16) y **A88-p3** (66.03).\n  Esto puede indicar diferencias en el perfil operativo de cada almacén, pero **no permite concluir ventas altas o bajas** sin datos comerciales.\n\n### Riesgos y",
+      "latency_ms": 3312.87,
+      "hallucination_score": 0.97,
+      "hallucination_flag": false,
+      "hallucination_issues": "La respuesta se mantiene dentro del contexto: aclara que no hay datos de ventas y solo interpreta métricas de inventario. No introduce hechos externos ni conclusiones directas sobre ventas. La única parte algo especulativa es 'probablemente soportan una mayor capacidad de abastecimiento', pero está formulada como inferencia y no como dato.",
+      "quality_score": 0.94,
+      "quality_label": "alta",
+      "quality_issues": "La respuesta es clara, ejecutiva y bien alineada al contexto: reconoce correctamente que no hay datos de ventas para medir una relación directa y usa los datos de inventario para inferencias prudentes. Como mejora menor, podría cerrar la frase final truncada ('Riesgos y...') y ser un poco más sintética.",
+      "retrieved_chunks": 8,
+      "prompt_estimated_tokens": 889,
+      "consistency_group": {
+        "runs_for_query": 3,
+        "unique_answers": 3,
+        "is_identical_across_temps": false
+      }
+    }
+  ]
+}
